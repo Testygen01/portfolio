@@ -2,7 +2,7 @@
 
 ## Overview
 
-A registed student organization requested a shared email address and website presence. While the request appeared straightforward ...
+A registed student organization requested for a mechanism for shared communication and website presence.
 
 ## Environment
 
@@ -15,8 +15,6 @@ A registed student organization requested a shared email address and website pre
 
 The organization required shared access to communication and online resources. Using a personal NetID would create ownership, continuity, and security concers if leadership changed over time.
 
-## Investigation
-
 ## Actions Taken
 
 - Identified service accounts as the appropriate solution.
@@ -26,11 +24,7 @@ The organization required shared access to communication and online resources. U
 
 ## Resolution
 
-While my actions did not directly resolve the client's problem, it steered the student organization toward the appropriate team that would later implement their request.
-
-## Outcome
-
-The service account solution was aligned with institutional security standards and reduced long-term administrative risk associated with personnel turnover.
+While my actions did not directly resolve the client's problem, it steered the student organization toward the appropriate team that would later implement their request. I believe the service account solution was aligned with institutional security standards and reduced long-term administrative risk associated with personnel turnover.
 
 ## Key Takeawys
 
