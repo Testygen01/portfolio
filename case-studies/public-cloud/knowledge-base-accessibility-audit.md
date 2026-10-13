@@ -21,5 +21,34 @@ As a result, documentation quality and accessibility compliance varied across th
 
 ## Action Taken
 
-I reviewed existing documentation to identify common accessibility issues and areas requiring remediation. The audit focused on document structurem formatting consistency, accessibility compliance, and overall usability.
+I reviewed existing documentation to identify common accessibility issues and areas requiring remediation. The audit focused on document structure, consistent formatting, accessibility compliance, and overall usability.
+
+Exact actions I took included:
+- Audited approximately 160 knowledge base documents
+- Corrected accessbility deficiencies
+- Standardized documentation where appropriate
+- Presented my work to the team during a standup meeting
+- Documented a reference framework for making future documents accessible from the beginning.
+
+## Outcome
+
+This project improved the quality and usability of the Cloud team's technical documentation used by both customers and team members.
+
+In addition to improving accessibility compliance, it helped establish a more maintainable and professional documentation environment.
+
+## Key Takeaways
+
+Effective IT operations extend beyonf infrastructure and systems. High-quality documentation is an essential operational asset that improves knowledge sharing, onboarding, support efficiecny, and long-term maintainability.
+
+This experience reinforced the importance of accessibility as a core component of user experience and service delivery.
+
+## Skills Demonstrated
+
+- Technical Documentation
+- Accessibility Compliance
+- Documentation Governance
+- Quality Assurance
+- Attention to Detail
+- Process Improvement
+- Knowledge Management
 
