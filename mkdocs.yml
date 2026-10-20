@@ -1,0 +1,13 @@
+site_name: Justice Chukwuemeka Portfolio
+site_description: IT Job Rotation Portfolio
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+
+  - About:
+      - About Me: about/about-me.md
+      - Rotation Program Overview: about/rotation-program-overview.md
+      - Career Growth: about/career-growth.md
