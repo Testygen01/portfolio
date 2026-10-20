@@ -1,64 +1,36 @@
-# Justice I. Chukwuemeka Portfolio
+# Justice I. Chukwuemeka
 
-## Overview
+Associate IT Professional
+
+## Welcome
 
 This portfolio documents my work and professional growth as a participant in the University of Wisconsin-Madison Information Technology Job Rotation Program.
 
-The program consists of four six-month rotations across different IT units, providing exposure to a broad range of technologies, operational environments, and business challenges.
+## Current Focus
+
+- Linux Administration
+- Research Computing
+- HTCondor
+- Infrastructure Operations
+- Cloud Technologies
 
 ## Rotations
 
 ### DoIT General Help Desk
 
-Focus areas:
-
-- Technical troubleshooting
-- Identity and Access Management
-- Endpoint Support
-- Customer Service
+Technical support, IAM, endpoint troubleshooting.
 
 ### DoIT Public Cloud Team
 
-Focus areas:
-
-- AWS
-- Cloud Security
-- Terraform
-- JIra Automation
-- Cloud Governance
+AWS, Terraform, automation, governance.
 
 ### Center for High Throughput Computing (CHTC)
 
-Focus areas:
+Linux administration, HTCondor, storage systems, infrastructure operations.
 
-- Linux Administration
-- HTCondor
-- Storage Systems
-- Research Computing
-Infrastructure Operations
+## Featured Case Studies
 
-## Porfolio Structure
-
-### Rotation Summaries
-
-High-level overview of responsibilites and accomplishments from each rotation.
-
-### Case Studies
-
-Detailed analyses of projects, troubleshooting efforts, and operational work.
-
-### Professional Development
-
-Professional skills, training, and leadership development completed through the Job Rotation Program.
-
-## Key Technical Areas
-
-- Linux Administration
-- Cloud Infrastructure
+- HTCondor Node Troubleshooting
+- AWS Innovation Sandbox
+- Service Account Governance
 - Jira Automation
-- Identity and Access Management
-- Infrastructure Operations
-- Technical Documentation
-- Troubleshooting
-- Cloud Security and Governance
-

@@ -6,8 +6,27 @@ theme:
 
 nav:
   - Home: index.md
-
   - About:
       - About Me: about/about-me.md
       - Rotation Program Overview: about/rotation-program-overview.md
       - Career Growth: about/career-growth.md
+  - Rotations:
+      - Help Desk: rotations/help-desk-summary.md
+      - Public Cloud: rotations/public-cloud-summary.md
+      - CHTC: rotations/chtc-summary.md
+  - Case Studies:
+      - Help Desk:
+          - Service Account Governance: case-studies/help-desk/service-account-governance.md
+          - Python Environment Resolution: case-studies/help-desk/python-environment-resolution.md
+          - ChromeOS Cryptohome Failure: case-studies/help-desk/chromeos-cryptohome-failure.md
+          - MFA Browser Compatibility: case-studies/help-desk/mfa-browser-compatibility.md
+      - Public Cloud:
+          - AWS Innovation Sandbox: case-studies/public-cloud/aws-innovation-sandbox.md
+          - Jira Automation: case-studies/public-cloud/jira-automation.md
+          - AWS AI Security Research: case-studies/public-cloud/aws-ai-security-research.md
+          - Cloud Security Assessment: case-studies/public-cloud/cloud-security-assessment.md
+          - Knowledge Base Audit: case-studies/public-cloud/knowledge-base-accessibility-audit.md
+      - CHTC:
+          - HTCondor Node Troubleshooting: case-studies/chtc/htcondor-node-troubleshooting.md
+          - Data Migration: case-studies/chtc/rsync-data-migration.md
+          - RACADM Maintenance: case-studies/chtc/dell-racadm-maintenance.md
