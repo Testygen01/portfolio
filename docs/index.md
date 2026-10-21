@@ -1,29 +1,22 @@
 # Justice I. Chukwuemeka
 
-Associate IT Professional
+## Associate IT Professional
+
+Linux Administration . Cloud Infrastructure . High Throughput Computing . Automation
 
 ---
 
-## About Me
+Welcome to my professional prtfolio
 
-I am an Associate IT Professional participating in the University of Wisconsin-Madison Information Technology Job Rotation Program.
-
-My experience spans:
-
-- End User Support
-- Cloud Infrastructure
-- Linux Systems Administration
-- High Throughput Computing
-
-I enjoy troubleshooting complex technical problems, improving operational processes, and supporting the infrastructure that enables research and innovation.
+I am an Associate IT Professional participating in the University of Wisconsin-Madison Information Technology Job Rotation Program. Through my rotations so far, I have gained experience supporting end users, enabling cloud services, and administering research computing infrastructure.
 
 ---
 
-## Current Rotation
+## Currently Working On
 
 ### Center for High Throughput Computing (CHTC)
 
-Current areas of focus
+Current areas of focus include:
 
 - Linux Administration
 - Storage Systems
@@ -33,51 +26,79 @@ Current areas of focus
 
 ---
 
-## Technical Interests
+## Rotation Journey
 
-- Linux Systems Administration
-- Infrastructure Engineering
-- Cloud Computing
-- Automation
-- Research Computing
-- Storage Technologies
+### DoIT General Help Desk
+
+Developed a foundation in troubleshooting, identity and access management, endpoint support, and customer service.
+
+### DoIT Public Cloud Team
+
+Worked on cloud engineering, AWS governance, automation, security research, and Infrastructure as Code.
+
+### Center for High Throughput Computing (CHTC)
+
+Supporting Linux infrastructure, HTCondor operations, storage systems, and research computing environments.
 
 ---
 
 ## Featured Case Studies
 
-### HTCondor Node Troubleshooting
+!!! example "HTCondor Node Troubleshooting"
 
-Investigated node scheduling behavior and execution availability with an HTCondor environment
+    Investigated execution node availability within an HTCondor environment by analyzing node advertisements, scheduling state, and workload execution behavior.
 
-<!-- navigation breadcrumb -->
--> Case Studies -> CHTC -> HTCondor Node Troubleshooting
-
-### AWS Innovation Sandbox
-
-Contributed to the development of a secure cloud environment for research and experimentation.
-
-<!-- navigation breadcrumb -->
--> Case Studies -> Public Cloud -> AWS Innovation Sandbox
-
-### Jira Automation
-
-Implemented workflow automations that reduced manual effort and improved operational efficiency.
-
-<!-- navigation breadcrumb -->
--> Case Studies -> Public Cloud -> Jira Automation
-
-### Service Account Governance
-
-Applied identity and access management principles to support secure service account provisioning.
-
-<!-- navigation breadcrumb -->
--> Case Studies -> Help Desk -> Service Account
+    **Technologies:**
+        Linux server, HTCondor, Distributed Computing
 
 ---
 
-## Portfolio Goals
+!!! example "AWS Innovation Sandbox"
 
-This portfolio documents projects, troubleshooting efforts, and professional development completed throughout the Information Technology Job Rotation Program.
+    Contributed to the development of a governed and secure AWS environment for research and experimentation using Infrastructure as Code and cloud governance principles.
 
-The objective is to showcase both technical accomplishments and the problem-solving approach used to address real-world challenges.
+    **Technologies:**
+    AWS, Terraform, Git
+---
+
+!!! example "Cloud Security Assessment Framework"
+
+    Researched security frameworks and developed assessment questions to improve cloud security reviews and risk identification.
+
+    **Technologies:**
+    AWS, NIST 800-53, CIS Benchmarks, CSA CCM
+---
+
+!!! example "Jira Automation"
+
+    Implemented workflow automations that streamlined ticket management processes and reduced manual adminstrative effort.
+
+    **Technologies:**
+    Jira Automation, Regex, Process Improvement
+---
+
+## Technical Interests
+
+- Linux Systems Administration
+- Infrastructure Engineering
+- Distributed Systems
+- Storage Technologies
+- Automation
+- Networking
+- Configuration Management
+
+---
+
+## Explore
+
+### About
+
+Learn more about my background, skills and professional interests.
+
+### Rotations
+
+Review summaries of each rotation and the skills developed in each role.
+
+### Case Studies
+
+Explore detailed project and troubleshooting write-ups covering cloud infrastructre, Linux administration, automation, security, and research computing. 
