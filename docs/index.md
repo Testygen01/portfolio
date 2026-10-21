@@ -51,28 +51,28 @@ Current areas of focus
 Investigated node scheduling behavior and execution availability with an HTCondor environment
 
 <!-- navigation breadcrumb -->
--> Case Studeis -> CHTC -> HTCondor Node Troubleshooting
+-> Case Studies -> CHTC -> HTCondor Node Troubleshooting
 
 ### AWS Innovation Sandbox
 
 Contributed to the development of a secure cloud environment for research and experimentation.
 
 <!-- navigation breadcrumb -->
--> Case Studeis -> Public Cloud -> AWS Innovation Sandbox
+-> Case Studies -> Public Cloud -> AWS Innovation Sandbox
 
 ### Jira Automation
 
 Implemented workflow automations that reduced manual effort and improved operational efficiency.
 
 <!-- navigation breadcrumb -->
--> Case Studeis -> Public Cloud -> Jira Automation
+-> Case Studies -> Public Cloud -> Jira Automation
 
 ### Service Account Governance
 
 Applied identity and access management principles to support secure service account provisioning.
 
 <!-- navigation breadcrumb -->
--> Case Studeis -> Help Desk -> Service Account
+-> Case Studies -> Help Desk -> Service Account
 
 ---
 
