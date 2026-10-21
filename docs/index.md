@@ -2,35 +2,82 @@
 
 Associate IT Professional
 
-## Welcome
+---
 
-This portfolio documents my work and professional growth as a participant in the University of Wisconsin-Madison Information Technology Job Rotation Program.
+## About Me
 
-## Current Focus
+I am an Associate IT Professional participating in the University of Wisconsin-Madison Information Technology Job Rotation Program.
 
-- Linux Administration
-- Research Computing
-- HTCondor
-- Infrastructure Operations
-- Cloud Technologies
+My experience spans:
 
-## Rotations
+- End User Support
+- Cloud Infrastructure
+- Linux Systems Administration
+- High Throughput Computing
 
-### DoIT General Help Desk
+I enjoy troubleshooting complex technical problems, improving operational processes, and supporting the infrastructure that enables research and innovation.
 
-Technical support, IAM, endpoint troubleshooting.
+---
 
-### DoIT Public Cloud Team
-
-AWS, Terraform, automation, governance.
+## Current Rotation
 
 ### Center for High Throughput Computing (CHTC)
 
-Linux administration, HTCondor, storage systems, infrastructure operations.
+Current areas of focus
+
+- Linux Administration
+- Storage Systems
+- HTCondor
+- Infrastructure Operations
+- Enterprise Hardware Management
+
+---
+
+## Technical Interests
+
+- Linux Systems Administration
+- Infrastructure Engineering
+- Cloud Computing
+- Automation
+- Research Computing
+- Storage Technologies
+
+---
 
 ## Featured Case Studies
 
-- HTCondor Node Troubleshooting
-- AWS Innovation Sandbox
-- Service Account Governance
-- Jira Automation
+### HTCondor Node Troubleshooting
+
+Investigated node scheduling behavior and execution availability with an HTCondor environment
+
+<!-- navigation breadcrumb -->
+-> Case Studeis -> CHTC -> HTCondor Node Troubleshooting
+
+### AWS Innovation Sandbox
+
+Contributed to the development of a secure cloud environment for research and experimentation.
+
+<!-- navigation breadcrumb -->
+-> Case Studeis -> Public Cloud -> AWS Innovation Sandbox
+
+### Jira Automation
+
+Implemented workflow automations that reduced manual effort and improved operational efficiency.
+
+<!-- navigation breadcrumb -->
+-> Case Studeis -> Public Cloud -> Jira Automation
+
+### Service Account Governance
+
+Applied identity and access management principles to support secure service account provisioning.
+
+<!-- navigation breadcrumb -->
+-> Case Studeis -> Help Desk -> Service Account
+
+---
+
+## Portfolio Goals
+
+This portfolio documents projects, troubleshooting efforts, and professional development completed throughout the Information Technology Job Rotation Program.
+
+The objective is to showcase both technical accomplishments and the problem-solving approach used to address real-world challenges.
