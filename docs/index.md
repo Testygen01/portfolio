@@ -8,6 +8,8 @@ Linux infrastructure and research computing, with hands-on experience in support
 
 I am participating in the University of Wisconsin-Madison Information Technology Job Rotation Program. Through my rotations so far, I have gained experience supporting end users, enabling cloud services, and administering research computing infrastructure.
 
+<!-- Start here: the only primary entry cards on this page. Keep to three cards, and do not repeat these links in Dig deeper. -->
+
 ## Start here
 
 <div class="grid cards" markdown>
@@ -19,13 +21,13 @@ I am participating in the University of Wisconsin-Madison Information Technology
 
 - **Rotations**
     ---
-    Help Desk, Public Cloud, and CHTC, in order.
-    [Rotation timeline →](about/timeline.md)
+    Help Desk, Public Cloud, and CHTC, in order. Start with the first rotation.
+    [Help Desk summary →](rotations/help-desk-summary.md)
 
 - **Case Studies**
     ---
-    Troubleshooting investigations and technical projects.
-    [HTCondor troubleshooting →](case-studies/chtc/htcondor-node-troubleshooting.md)
+    Troubleshooting investigations and technical projects. Start with the first help-desk case study.
+    [Service Account Governance →](case-studies/help-desk/service-account-governance.md)
 
 </div>
 
@@ -110,23 +112,30 @@ Supporting Linux infrastructure, HTCondor operations, storage systems, and resea
 - Networking
 - Configuration Management
 
-## Explore
+<!-- Dig deeper: About section pages only. Do not repeat Start here links here, so each link on this page has one clear purpose. -->
+
+## Dig deeper
 
 <div class="grid cards" markdown>
-
-- **About**
-    ---
-    Learn more about my background, skills and professional interests.
-    [About me →](about/about-me.md)
 
 - **Skills Matrix**
     ---
     Review technical skills, platforms, and professional competencies developed across rotations.
     [Skills Matrix →](about/skills.md)
 
-- **Case Studies**
+- **Timeline**
     ---
-    Explore detailed technical projects and troubleshooting investigations.
-    [HTCondor troubleshooting →](case-studies/chtc/htcondor-node-troubleshooting.md)
+    A dated view of progression through the rotation program.
+    [Timeline →](about/timeline.md)
+
+- **Career Growth**
+    ---
+    Goals, development, and what comes next after this rotation.
+    [Career Growth →](about/career-growth.md)
+
+- **Rotation Program Overview**
+    ---
+    How the Job Rotation Program works, and what each rotation covers.
+    [Program overview →](about/rotation-program-overview.md)
 
 </div>
