@@ -15,17 +15,17 @@ I am participating in the University of Wisconsin-Madison Information Technology
 - **About**
     ---
     Background, skills, and professional interests.
-    [:material-arrow-right: About me](about/about-me.md)
+    [About me →](about/about-me.md)
 
 - **Rotations**
     ---
     Help Desk, Public Cloud, and CHTC, in order.
-    [:material-arrow-right: Rotation timeline](about/timeline.md)
+    [Rotation timeline →](about/timeline.md)
 
 - **Case Studies**
     ---
     Troubleshooting investigations and technical projects.
-    [:material-arrow-right: HTCondor troubleshooting](case-studies/chtc/htcondor-node-troubleshooting.md)
+    [HTCondor troubleshooting →](case-studies/chtc/htcondor-node-troubleshooting.md)
 
 </div>
 
@@ -117,16 +117,16 @@ Supporting Linux infrastructure, HTCondor operations, storage systems, and resea
 - **About**
     ---
     Learn more about my background, skills and professional interests.
-    [:material-arrow-right: About me](about/about-me.md)
+    [About me →](about/about-me.md)
 
 - **Skills Matrix**
     ---
     Review technical skills, platforms, and professional competencies developed across rotations.
-    [:material-arrow-right: Skills Matrix](about/skills.md)
+    [Skills Matrix →](about/skills.md)
 
 - **Case Studies**
     ---
     Explore detailed technical projects and troubleshooting investigations.
-    [:material-arrow-right: HTCondor troubleshooting](case-studies/chtc/htcondor-node-troubleshooting.md)
+    [HTCondor troubleshooting →](case-studies/chtc/htcondor-node-troubleshooting.md)
 
 </div>
