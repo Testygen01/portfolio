@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Professional Portfolio">
+        <meta name="description" content="Junior systems engineer focused on Linux infrastructure and research computing">
       
       
       
@@ -29,6 +29,9 @@
     
       <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
       
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
       
 
 
@@ -46,6 +49,8 @@
       
     
     
+      <link rel="stylesheet" href="stylesheets/landing.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -55,7 +60,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -76,9 +88,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Justice I. Chukwuemeka" class="md-header__button md-logo" aria-label="Justice I. Chukwuemeka" data-md-component="logo">
       
@@ -106,6 +116,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -137,6 +173,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -162,6 +200,106 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="about/about-me/" class="md-tabs__link">
+          
+  
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="rotations/help-desk-summary/" class="md-tabs__link">
+          
+  
+  
+  Rotations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="case-studies/help-desk/service-account-governance/" class="md-tabs__link">
+          
+  
+  
+  Case Studies
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -175,8 +313,10 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Justice I. Chukwuemeka" class="md-nav__button md-logo" aria-label="Justice I. Chukwuemeka" data-md-component="logo">
       
@@ -256,10 +396,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#associate-it-professional" class="md-nav__link">
+  <a href="#junior-systems-engineer" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Associate IT Professional
+        Junior Systems Engineer
       
     </span>
   </a>
@@ -267,10 +407,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#linux-administration-cloud-infrastructure-high-throughput-computing-automation" class="md-nav__link">
+  <a href="#start-here" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Linux Administration . Cloud Infrastructure . High Throughput Computing . Automation
+        Start here
       
     </span>
   </a>
@@ -350,10 +490,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#explore" class="md-nav__link">
+  <a href="#dig-deeper" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Explore
+        Dig deeper
       
     </span>
   </a>
@@ -377,6 +517,11 @@
     
     
     
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -572,6 +717,11 @@
     
     
     
+      
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -710,6 +860,11 @@
     
     
     
+      
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -756,6 +911,11 @@
     
     
     
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -923,6 +1083,11 @@
     
     
     
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -1119,6 +1284,11 @@
     
     
     
+      
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -1282,10 +1452,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#associate-it-professional" class="md-nav__link">
+  <a href="#junior-systems-engineer" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Associate IT Professional
+        Junior Systems Engineer
       
     </span>
   </a>
@@ -1293,10 +1463,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#linux-administration-cloud-infrastructure-high-throughput-computing-automation" class="md-nav__link">
+  <a href="#start-here" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Linux Administration . Cloud Infrastructure . High Throughput Computing . Automation
+        Start here
       
     </span>
   </a>
@@ -1376,10 +1546,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#explore" class="md-nav__link">
+  <a href="#dig-deeper" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Explore
+        Dig deeper
       
     </span>
   </a>
@@ -1404,14 +1574,35 @@
 
 
 <h1 id="justice-i-chukwuemeka">Justice I. Chukwuemeka</h1>
-<p><img alt="Justice Chukwuemeka" src="assets/headshot.jpg" width="175" /></p>
-<h2 id="associate-it-professional">Associate IT Professional</h2>
-<h2 id="linux-administration-cloud-infrastructure-high-throughput-computing-automation">Linux Administration . Cloud Infrastructure . High Throughput Computing . Automation</h2>
-<!-- [Resume](resume/resume.pdf) -->
-<hr />
-<p>Welcome to my professional portfolio</p>
-<p>I am an Associate IT Professional participating in the University of Wisconsin-Madison Information Technology Job Rotation Program. Through my rotations so far, I have gained experience supporting end users, enabling cloud services, and administering research computing infrastructure.</p>
-<hr />
+<p><img alt="Justice Chukwuemeka" src="assets/headshot.jpg" width="160" /></p>
+<h2 id="junior-systems-engineer">Junior Systems Engineer</h2>
+<p>Linux infrastructure and research computing, with hands-on experience in support, cloud services, and high throughput computing.</p>
+<p>I am participating in the University of Wisconsin-Madison Information Technology Job Rotation Program. Through my rotations so far, I have gained experience supporting end users, enabling cloud services, and administering research computing infrastructure.</p>
+<!-- Start here: the only primary entry cards on this page. Keep to three cards, and do not repeat these links in Dig deeper. -->
+
+<h2 id="start-here">Start here</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>About</strong>
+    ---
+    Background, skills, and professional interests.
+    <a href="about/about-me/">About me →</a></p>
+</li>
+<li>
+<p><strong>Rotations</strong>
+    ---
+    Help Desk, Public Cloud, and CHTC, in order. Start with the first rotation.
+    <a href="rotations/help-desk-summary/">Help Desk summary →</a></p>
+</li>
+<li>
+<p><strong>Case Studies</strong>
+    ---
+    Troubleshooting investigations and technical projects. Start with the first help-desk case study.
+    <a href="case-studies/help-desk/service-account-governance/">Service Account Governance →</a></p>
+</li>
+</ul>
+</div>
 <div class="admonition info">
 <p class="admonition-title">Current Rotation: Center for High Throughput Computing (CHTC)</p>
 <p>Current areas of focus:</p>
@@ -1422,46 +1613,48 @@
 <li>Infrastructure Operations</li>
 <li>Enterprise Hardware Management</li>
 </ul>
+<p><a href="rotations/chtc-summary/">Read the CHTC rotation summary</a></p>
 </div>
-<hr />
 <h2 id="rotation-journey">Rotation Journey</h2>
 <p>For a detailed view of my progression through the program, see the <strong>Timeline</strong> page.</p>
 <h3 id="doit-general-help-desk">DoIT General Help Desk</h3>
 <p>Developed a foundation in troubleshooting, identity and access management, endpoint support, and customer service.</p>
+<p><a href="rotations/help-desk-summary/">Help Desk summary</a></p>
 <h3 id="doit-public-cloud-team">DoIT Public Cloud Team</h3>
 <p>Worked on cloud engineering, AWS governance, automation, security research, and Infrastructure as Code.</p>
+<p><a href="rotations/public-cloud-summary/">Public Cloud summary</a></p>
 <h3 id="center-for-high-throughput-computing-chtc">Center for High Throughput Computing (CHTC)</h3>
 <p>Supporting Linux infrastructure, HTCondor operations, storage systems, and research computing environments.</p>
-<hr />
+<p><a href="rotations/chtc-summary/">CHTC summary</a></p>
 <h2 id="featured-case-studies">Featured Case Studies</h2>
 <div class="admonition example">
 <p class="admonition-title">HTCondor Node Troubleshooting</p>
 <p>Investigated execution node availability within an HTCondor environment by analyzing node advertisements, scheduling state, and workload execution behavior.</p>
 <p><strong>Technologies:</strong>
-    Linux server, HTCondor, Distributed Computing</p>
+Linux server, HTCondor, Distributed Computing</p>
+<p><a href="case-studies/chtc/htcondor-node-troubleshooting/">Read the full case study</a></p>
 </div>
-<hr />
 <div class="admonition example">
 <p class="admonition-title">AWS Innovation Sandbox</p>
 <p>Contributed to the development of a governed and secure AWS environment for research and experimentation using Infrastructure as Code and cloud governance principles.</p>
 <p><strong>Technologies:</strong>
 AWS, Terraform, Git</p>
+<p><a href="case-studies/public-cloud/aws-innovation-sandbox/">Read the full case study</a></p>
 </div>
-<hr />
 <div class="admonition example">
 <p class="admonition-title">Cloud Security Assessment Framework</p>
 <p>Researched security frameworks and developed assessment questions to improve cloud security reviews and risk identification.</p>
 <p><strong>Technologies:</strong>
 AWS, NIST 800-53, CIS Benchmarks, CSA CCM</p>
+<p><a href="case-studies/public-cloud/cloud-security-assessment/">Read the full case study</a></p>
 </div>
-<hr />
 <div class="admonition example">
 <p class="admonition-title">Jira Automation</p>
-<p>Implemented workflow automations that streamlined ticket management processes and reduced manual adminstrative effort.</p>
+<p>Implemented workflow automations that streamlined ticket management processes and reduced manual administrative effort.</p>
 <p><strong>Technologies:</strong>
 Jira Automation, Regex, Process Improvement</p>
+<p><a href="case-studies/public-cloud/jira-automation/">Read the full case study</a></p>
 </div>
-<hr />
 <h2 id="technical-interests">Technical Interests</h2>
 <ul>
 <li>Linux Systems Administration</li>
@@ -1472,21 +1665,36 @@ Jira Automation, Regex, Process Improvement</p>
 <li>Networking</li>
 <li>Configuration Management</li>
 </ul>
-<hr />
-<h2 id="explore">Explore</h2>
-<div class="admonition note">
-<p class="admonition-title">About</p>
-<p>Learn more about my background, skills and professional interests.</p>
-</div>
-<hr />
-<div class="admonition note">
-<p class="admonition-title">Skills Matrix</p>
-<p>Review technical skills, platforms, and professional competencies developed across rotations.</p>
-</div>
-<hr />
-<div class="admonition note">
-<p class="admonition-title">Case Studies</p>
-<p>Explore detailed technical projects and troubleshooting investigations.</p>
+<!-- Dig deeper: About section pages only. Do not repeat Start here links here, so each link on this page has one clear purpose. -->
+
+<h2 id="dig-deeper">Dig deeper</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><strong>Skills Matrix</strong>
+    ---
+    Review technical skills, platforms, and professional competencies developed across rotations.
+    <a href="about/skills/">Skills Matrix →</a></p>
+</li>
+<li>
+<p><strong>Timeline</strong>
+    ---
+    A dated view of progression through the rotation program.
+    <a href="about/timeline/">Timeline →</a></p>
+</li>
+<li>
+<p><strong>Career Growth</strong>
+    ---
+    Goals, development, and what comes next after this rotation.
+    <a href="about/career-growth/">Career Growth →</a></p>
+</li>
+<li>
+<p><strong>Rotation Program Overview</strong>
+    ---
+    How the Job Rotation Program works, and what each rotation covers.
+    <a href="about/rotation-program-overview/">Program overview →</a></p>
+</li>
+</ul>
 </div>
 
 
@@ -1508,6 +1716,12 @@ Jira Automation, Regex, Process Improvement</p>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
       </main>
       
         <footer class="md-footer">
@@ -1518,6 +1732,7 @@ Jira Automation, Regex, Process Improvement</p>
   
     <div class="md-copyright__highlight">
       © 2026 Justice I. Chukwuemeka
+
     </div>
   
   
@@ -1568,7 +1783,7 @@ Jira Automation, Regex, Process Improvement</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
