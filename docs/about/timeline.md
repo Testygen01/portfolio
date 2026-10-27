@@ -1,102 +1,60 @@
 # Rotation Timeline
 
-This timeline highlights my progression through UW-Madison Information Technology Job Rotation Program.
+The Job Rotation Program is a two-year program with four rotations, each lasting about six months. This page follows my path through it so far.
 
 ---
 
 ## Rotation 1: DoIT General Help Desk
 
-**Focus: End User Support & Troubleshooting**
+**Focus: End user support and troubleshooting**
 
-Key areas of experience:
-
-- Technical troubleshooting
-- Identity and Access Management (IAM)
-- Endpoint support
-- Authentication technologies
-- Customer communication
+This was my foundation. I learned how to listen to a problem, narrow it down, and fix it without making things worse for the person waiting on the other end. Most of my work was troubleshooting, identity and access management, endpoint support, and authentication.
 
 Representative case studies:
 
-- Service Account Governance
-- Python Environment Resolution
-- ChromeOS Cryptohome Failure
-- MFA Browser Compatibility
+- [Service Account Governance](../case-studies/help-desk/service-account-governance.md)
+- [Python Environment Resolution](../case-studies/help-desk/python-environment-resolution.md)
+- [ChromeOS Cryptohome Failure](../case-studies/help-desk/chromeos-cryptohome-failure.md)
+- [MFA Browser Compatibility](../case-studies/help-desk/mfa-browser-compatibility.md)
 
-### Key Takeaway
-
-Built a strong foundation in troubleshooting, incident management, and customer-focused problem solving.
-
----
+Takeaway: good troubleshooting is patient, methodical, and focused on the user, not just the ticket.
 
 ---
 
 ## Rotation 2: DoIT Public Cloud Team
 
-**Focus: Cloud Engineering & Governance**
+**Focus: Cloud engineering and governance**
 
-Key areas of experience:
-
-- AWS
-- Terraform
-- Cloud security
-- Cloud governance
-- Process automation
-- Technical documentation
+Here I moved from supporting individual users to supporting services. I worked on AWS, Terraform, cloud security, governance, and automation, and learned how decisions made early in a cloud design show up later in operations.
 
 Representative case studies:
 
-- AWS Innovation Sandbox
-- JIra Automation
-- Cloud Security Assessment Framework
-- AWS AI Security Research
-- Knowledge Base Accessibility Audit
+- [AWS Innovation Sandbox](../case-studies/public-cloud/aws-innovation-sandbox.md)
+- [Jira Automation](../case-studies/public-cloud/jira-automation.md)
+- [Cloud Security Assessment Framework](../case-studies/public-cloud/cloud-security-assessment.md)
+- [AWS AI Security Research](../case-studies/public-cloud/aws-ai-security-research.md)
+- [Knowledge Base Accessibility Audit](../case-studies/public-cloud/knowledge-base-accessibility-audit.md)
 
-### Key Takeaway
-
-Expanded from end-user support into cloud technologies, automation, security research, and infrastructure planning.
-
----
+Takeaway: I went from fixing problems one at a time to building systems and processes that prevent them.
 
 ---
 
 ## Rotation 3: Center for High Throughput Computing (CHTC)
 
-**Focus: Linux Administration & Research Computing**
+**Focus: Linux administration and research computing**
 
-Key areas of experience:
-
-- Linux administration
-- HTCondor
-- Storage systems
-- Infrastructure operations
-- Enterprise hardware management
+This is my current rotation. I am working on Linux systems, HTCondor, storage, infrastructure operations, and enterprise hardware, supporting researchers who run large-scale computing jobs.
 
 Representative case studies:
 
-- HTCondor Node Troubleshooting
-- Data Migration and Storage Constraints 
-- Dell RACADM Maintenance
+- [HTCondor Node Troubleshooting](../case-studies/chtc/htcondor-node-troubleshooting.md)
+- [Data Migration](../case-studies/chtc/rsync-data-migration.md)
+- [RACADM Maintenance](../case-studies/chtc/dell-racadm-maintenance.md)
 
-## Key Takeaway
-
-Developing deeper expertise in systems administration, distributed computing, and infrastructure operations.
-
----
+Takeaway: I am building deeper systems depth here, and learning to operate infrastructure that other people depend on.
 
 ---
 
 ## Rotation 4
 
-**Future Rotation**
-
-To be determined.
-
-### Goals
-
-- Continue expanding infrastructure expertise
-- Strengthen automation and operational skills
-- Contribute to a large-scale technology environment
-
----
-
+Not yet assigned. I am scoping an infrastructure-based or networking-based placement, and I want to keep building Linux, networking, and systems depth in that rotation.

@@ -41,7 +41,6 @@ nav:
   - Home: index.md
   - About:
       - About Me: about/about-me.md
-      - Rotation Program Overview: about/rotation-program-overview.md
       - Skills Matrix: about/skills.md
       - Timeline: about/timeline.md
       - Career Growth: about/career-growth.md

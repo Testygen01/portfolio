@@ -133,9 +133,4 @@ Supporting Linux infrastructure, HTCondor operations, storage systems, and resea
     Goals, development, and what comes next after this rotation.
     [Career Growth →](about/career-growth.md)
 
-- **Rotation Program Overview**
-    ---
-    How the Job Rotation Program works, and what each rotation covers.
-    [Program overview →](about/rotation-program-overview.md)
-
 </div>
