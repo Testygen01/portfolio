@@ -34,7 +34,6 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
-
 extra_css:
   - stylesheets/landing.css
 
