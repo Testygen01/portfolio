@@ -1,8 +1,26 @@
 site_name: Justice I. Chukwuemeka
-site_description: Professional Portfolio
+site_description: Junior systems engineer focused on Linux infrastructure and research computing
 
 theme:
   name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 markdown_extensions:
   - admonition
@@ -14,6 +32,9 @@ features:
     - navigation.top
     - search.highlight
     - search.suggest
+
+extra_css:
+  - stylesheets/landing.css
 
 nav:
   - Home: index.md

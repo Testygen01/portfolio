@@ -1,17 +1,34 @@
 # Justice I. Chukwuemeka
 
-![Justice Chukwuemeka](assets/headshot.jpg){ width="175" }
-## Associate IT Professional
-Linux Administration . Cloud Infrastructure . High Throughput Computing . Automation
----
-<!-- [Resume](resume/resume.pdf) -->
----
+![Justice Chukwuemeka](assets/headshot.jpg){ width="160" }
 
-Welcome to my professional portfolio
+## Junior Systems Engineer
 
-I am an Associate IT Professional participating in the University of Wisconsin-Madison Information Technology Job Rotation Program. Through my rotations so far, I have gained experience supporting end users, enabling cloud services, and administering research computing infrastructure.
+Linux infrastructure and research computing, with hands-on experience in support, cloud services, and high throughput computing.
 
----
+I am participating in the University of Wisconsin-Madison Information Technology Job Rotation Program. Through my rotations so far, I have gained experience supporting end users, enabling cloud services, and administering research computing infrastructure.
+
+## Start here
+
+<div class="grid cards" markdown>
+
+- **About**
+    ---
+    Background, skills, and professional interests.
+    [:material-arrow-right: About me](about/about-me.md)
+
+- **Rotations**
+    ---
+    Help Desk, Public Cloud, and CHTC, in order.
+    [:material-arrow-right: Rotation timeline](about/timeline.md)
+
+- **Case Studies**
+    ---
+    Troubleshooting investigations and technical projects.
+    [:material-arrow-right: HTCondor troubleshooting](case-studies/chtc/htcondor-node-troubleshooting.md)
+
+</div>
+
 !!! info "Current Rotation: Center for High Throughput Computing (CHTC)"
     Current areas of focus:
 
@@ -21,24 +38,29 @@ I am an Associate IT Professional participating in the University of Wisconsin-M
     - Infrastructure Operations
     - Enterprise Hardware Management
 
----
+    [Read the CHTC rotation summary](rotations/chtc-summary.md)
 
 ## Rotation Journey
 
 For a detailed view of my progression through the program, see the **Timeline** page.
+
 ### DoIT General Help Desk
 
 Developed a foundation in troubleshooting, identity and access management, endpoint support, and customer service.
+
+[Help Desk summary](rotations/help-desk-summary.md)
 
 ### DoIT Public Cloud Team
 
 Worked on cloud engineering, AWS governance, automation, security research, and Infrastructure as Code.
 
+[Public Cloud summary](rotations/public-cloud-summary.md)
+
 ### Center for High Throughput Computing (CHTC)
 
 Supporting Linux infrastructure, HTCondor operations, storage systems, and research computing environments.
 
----
+[CHTC summary](rotations/chtc-summary.md)
 
 ## Featured Case Studies
 
@@ -47,9 +69,9 @@ Supporting Linux infrastructure, HTCondor operations, storage systems, and resea
     Investigated execution node availability within an HTCondor environment by analyzing node advertisements, scheduling state, and workload execution behavior.
 
     **Technologies:**
-        Linux server, HTCondor, Distributed Computing
+    Linux server, HTCondor, Distributed Computing
 
----
+    [Read the full case study](case-studies/chtc/htcondor-node-troubleshooting.md)
 
 !!! example "AWS Innovation Sandbox"
 
@@ -57,7 +79,8 @@ Supporting Linux infrastructure, HTCondor operations, storage systems, and resea
 
     **Technologies:**
     AWS, Terraform, Git
----
+
+    [Read the full case study](case-studies/public-cloud/aws-innovation-sandbox.md)
 
 !!! example "Cloud Security Assessment Framework"
 
@@ -65,15 +88,17 @@ Supporting Linux infrastructure, HTCondor operations, storage systems, and resea
 
     **Technologies:**
     AWS, NIST 800-53, CIS Benchmarks, CSA CCM
----
+
+    [Read the full case study](case-studies/public-cloud/cloud-security-assessment.md)
 
 !!! example "Jira Automation"
 
-    Implemented workflow automations that streamlined ticket management processes and reduced manual adminstrative effort.
+    Implemented workflow automations that streamlined ticket management processes and reduced manual administrative effort.
 
     **Technologies:**
     Jira Automation, Regex, Process Improvement
----
+
+    [Read the full case study](case-studies/public-cloud/jira-automation.md)
 
 ## Technical Interests
 
@@ -85,17 +110,23 @@ Supporting Linux infrastructure, HTCondor operations, storage systems, and resea
 - Networking
 - Configuration Management
 
----
-
 ## Explore
 
-!!! note "About"
+<div class="grid cards" markdown>
+
+- **About**
+    ---
     Learn more about my background, skills and professional interests.
----
+    [:material-arrow-right: About me](about/about-me.md)
 
-!!! note "Skills Matrix"
+- **Skills Matrix**
+    ---
     Review technical skills, platforms, and professional competencies developed across rotations.
----
+    [:material-arrow-right: Skills Matrix](about/skills.md)
 
-!!! note "Case Studies"
+- **Case Studies**
+    ---
     Explore detailed technical projects and troubleshooting investigations.
+    [:material-arrow-right: HTCondor troubleshooting](case-studies/chtc/htcondor-node-troubleshooting.md)
+
+</div>
