@@ -1,4 +1,8 @@
-/* Landing page polish for the MkDocs Material theme. */
+/* Landing page polish for the MkDocs Material theme.
+   Sections: Base typography, Hero, Cards, Responsive.
+   Use theme variables where possible, so light and dark modes both work. */
+
+/* Base typography */
 
 .md-typeset h1 {
   font-size: 2.1rem;
@@ -22,19 +26,37 @@
   line-height: 1.65;
 }
 
+/* Hero */
+
 .md-typeset img[alt="Justice Chukwuemeka"] {
   border-radius: 12px;
   max-width: 100%;
   height: auto;
 }
 
+/* Cards: one pattern for Start here and Dig deeper */
+
 .md-typeset .grid.cards > ul > li {
   padding: 1rem 1.1rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
 }
 
 .md-typeset .grid.cards > ul > li > hr {
   margin: 0.7rem 0;
 }
+
+.md-typeset .grid.cards > ul > li a:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* Responsive */
 
 @media screen and (max-width: 767px) {
   .md-typeset h1 {
@@ -47,5 +69,9 @@
 
   .md-typeset img[alt="Justice Chukwuemeka"] {
     width: 140px;
+  }
+
+  .md-typeset .grid.cards > ul > li:hover {
+    transform: none;
   }
 }
