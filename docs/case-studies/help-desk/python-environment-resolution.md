@@ -1,4 +1,5 @@
 # Resolving an Academic Python Environment Configuration Issue
+`CommandLine Terminal` `Customer Support` `Root Cause Analysis` `Troubleshooting`
 
 ## Overview
 

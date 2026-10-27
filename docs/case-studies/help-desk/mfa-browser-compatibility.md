@@ -1,4 +1,5 @@
 # Diagnosing a Multi-Factor Authentication Browser Compatibility Issue
+`MFA` `Security` `Authentication` `Communication`
 
 ## Overview
 

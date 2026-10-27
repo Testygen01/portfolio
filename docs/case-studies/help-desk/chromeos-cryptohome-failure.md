@@ -1,4 +1,5 @@
 # Recoving a ChromeOS Device from Cryptohome Failure
+`ChromeOS` `Endpoint Support` `Troubleshooting` `Customer Communication`
 
 ## Overview
 

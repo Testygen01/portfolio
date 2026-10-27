@@ -1,4 +1,5 @@
 # Automating Jira Workflows to Improve Team Operations
+`Automation` `Jira` `Regex` `Agile Operations`
 
 ## Overview
 

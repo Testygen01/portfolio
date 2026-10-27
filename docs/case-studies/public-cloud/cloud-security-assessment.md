@@ -1,4 +1,5 @@
 # Enhancing a Cloud Security Assessment Framework
+`Risk Management` `Security Frameworks` `Technical Analysis`
 
 ## Overview
 
@@ -41,4 +42,4 @@ This security initiative resulted in a draft question framework to strengthen se
 - Cloud Governance
 - Security Frameworks
 - Compliance Research
-- Technical Ananlysis
+- Technical Analysis

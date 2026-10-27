@@ -1,33 +1,31 @@
 # Justice I. Chukwuemeka
 
+![Justice Chukwuemeka](assets/headshot.jpg){ width="175" }
 ## Associate IT Professional
-
 Linux Administration . Cloud Infrastructure . High Throughput Computing . Automation
-
+---
+<!-- [Resume](resume/resume.pdf) -->
 ---
 
-Welcome to my professional prtfolio
+Welcome to my professional portfolio
 
 I am an Associate IT Professional participating in the University of Wisconsin-Madison Information Technology Job Rotation Program. Through my rotations so far, I have gained experience supporting end users, enabling cloud services, and administering research computing infrastructure.
 
 ---
+!!! info "Current Rotation: Center for High Throughput Computing (CHTC)"
+    Current areas of focus:
 
-## Currently Working On
-
-### Center for High Throughput Computing (CHTC)
-
-Current areas of focus include:
-
-- Linux Administration
-- Storage Systems
-- HTCondor
-- Infrastructure Operations
-- Enterprise Hardware Management
+    - Linux Administration
+    - Storage Systems
+    - HTCondor
+    - Infrastructure Operations
+    - Enterprise Hardware Management
 
 ---
 
 ## Rotation Journey
 
+For a detailed view of my progression through the program, see the **Timeline** page.
 ### DoIT General Help Desk
 
 Developed a foundation in troubleshooting, identity and access management, endpoint support, and customer service.
@@ -91,14 +89,13 @@ Supporting Linux infrastructure, HTCondor operations, storage systems, and resea
 
 ## Explore
 
-### About
+!!! note "About"
+    Learn more about my background, skills and professional interests.
+---
 
-Learn more about my background, skills and professional interests.
+!!! note "Skills Matrix"
+    Review technical skills, platforms, and professional competencies developed across rotations.
+---
 
-### Rotations
-
-Review summaries of each rotation and the skills developed in each role.
-
-### Case Studies
-
-Explore detailed project and troubleshooting write-ups covering cloud infrastructre, Linux administration, automation, security, and research computing. 
+!!! note "Case Studies"
+    Explore detailed technical projects and troubleshooting investigations.

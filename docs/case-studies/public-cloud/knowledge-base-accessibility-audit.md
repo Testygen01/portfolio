@@ -1,4 +1,5 @@
 # Improving Knowledge Base Accessibility Through a Large-Scale Documentation Audit
+`Quality Assurance` `Accessibility Compliance` `Process Improvement` `Knowledge Management`
 
 ## Overview
 

@@ -1,4 +1,5 @@
 # Researching Security Governance for AI Services
+`AI` `Cloud` `Research` `Collaboration` `Technical Writing`
 
 ## Overview 
 
