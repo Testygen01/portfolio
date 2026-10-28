@@ -2,52 +2,18 @@
 
 ## Overview
 
-**Duration:** Second Rotation (6 months)
+The DoIT Public Cloud Team enables the use of public cloud technologies across the university through consulting, governance, security guidance, and cloud engineering support.
 
-The DoIT Public Cloud Team enables the use of public cloud technologies across the university by providing consulting, governance, security guidance, and cloud engineering support.
+## Responsibilities
 
-During this rotation, I participated in projects involving cloud architecture, Infrastructure as Code, workflow automation, cloud security, governance, and technical documentation. This experience expanded my perspective from individual user support to platform-level and organization-level technology solutions.
+I worked on cloud architecture, Infrastructure as Code, workflow automation, cloud security, governance, and technical documentation. My work included cloud project discovery and planning, Infrastructure as Code workflows using Terraform, cloud security research, process automation, and improvements to internal documentation and knowledge management resources.
 
-## Key Responsibilities
+## Representative case studies
 
-- Assisted with cloud engineering initiatives
-- Participated in cloud project discovery and planning
-- Supported Infrastructure as Code workflows
-- Conducted cloud security research
-- Implemented process automation solutions
-- Improved internal documentation and knowledge management resources
+- [AWS Innovation Sandbox](../case-studies/public-cloud/aws-innovation-sandbox.md)
+- [Jira Automation](../case-studies/public-cloud/jira-automation.md)
+- [Cloud Security Assessment Framework](../case-studies/public-cloud/cloud-security-assessment.md)
+- [AWS AI Security Research](../case-studies/public-cloud/aws-ai-security-research.md)
+- [Knowledge Base Accessibility Audit](../case-studies/public-cloud/knowledge-base-accessibility-audit.md)
 
-## Major Accomplishments
-
-- Contributed to the AWS Innovation Sandbox project supporting cloud-based research initiatives
-- Implemented Jira automations that streamlined team workflows and reduced manual effort
-- Researched cloud security frameworks including CIS benchmarks, NIST 800-53, and the CSA Cloud Controls Matrix
-- Developed internal guidance related to AI services and cloud security governance
-- Audited approximately 160 knowledge base documents and remediated accessibility issues
-
-## Skills Developed
-
-### Technical Skills
-
-- Amazon Web Services (AWS)
-- Terraform
-- Git and GitLab
-- Workflow Automation
-- Cloud Security
-- Cloud Governance
-
-### Professional Skills
-
-- Requirements Gathering
-- Technical Research
-- Project Documentation
-- Process Improvement
-- Cross-Team Collaboration
-
-## Related Case Studies
-
-- AWS Innovation Sandbox
-- Jira Automation
-- Cloud Security Assessment
-- AWS AI Security Research 
-- Knowledge Base Accessibility Audit
+These cases cover the AWS Innovation Sandbox project supporting cloud-based research initiatives, Jira automations that streamlined team workflows, cloud security research covering CIS benchmarks, NIST 800-53, and the CSA Cloud Controls Matrix, internal guidance on AI services and cloud security governance, and an audit of approximately 160 knowledge base documents with remediation of accessibility issues. Together, they show the core of the rotation, which was a move from individual user support to platform-level and organization-level technology solutions.
