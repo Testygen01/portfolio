@@ -1,40 +1,26 @@
-# Recoving a ChromeOS Device from Cryptohome Failure
-`ChromeOS` `Endpoint Support` `Troubleshooting` `Customer Communication`
+# Recovering a Chromebook from Cryptohome Failure
+`ChromeOS` `Crostini` `Endpoint Support` `Troubleshooting`
 
 ## Overview
 
-A ChromeOS device experienced Linux terminal failures caused by operating system and cryptohome issues.
+A student's Chromebook could not launch its Linux terminal, and the repair path led through a ChromeOS update into a cryptohome mount failure that locked the student out of the device entirely. A Powerwash reset resolved it. The case is a clean example of escalation discipline: non-destructive steps first, documented procedures next, destructive reset only after the alternatives were exhausted.
 
-## Environment
+## The problem
 
-- ChromeOS
-- Crostini Linux
-- Student Laptop
+The student needed terminal access, so I started the penguin container, the default Crostini Linux container on ChromeOS. It failed with `Error starting crostini for terminal: 62 (NEED_UPDATE)`. The error code pointed at the operating system itself: the installed ChromeOS version was too old for the terminal to start. That made the next step obvious, but the step after it was not.
 
-## Problem
+## Investigation
 
-The Linux development environment would not launch and stand user functionality was impacted.
+Following a documented troubleshooting path, I updated ChromeOS on the device, which is the reasonable response to a NEED_UPDATE error. The update completed and I rebooted. The student then could not sign back in at all: the device reported `can't mount crypto home`. Cryptohome is ChromeOS's encrypted per-user storage, so a mount failure there means the user's entire profile, including the Crostini container, is unreachable. I worked through the troubleshooting steps in Google's support documentation for this exact error, and none of them resolved it.
 
-## Actions Take
+## Fix
 
-- Performed operating system updates
-- Attempted standard recovery procedures
-- Evaluated user data implications
-- Confirmed recovery options from vendor documentation
-- Executed a Powerwash reset
+With the documented non-destructive steps exhausted, I performed a Powerwash, which returns the Chromebook to its factory state. That resolved the mount failure and the device came back healthy. A Powerwash erases local data, so this was not a step to take lightly; it was the last resort after the update path and the support documentation both failed. I am reporting the outcome honestly: the device was restored to service, and I do not have a record of which local files, if any, the student lost in the reset.
 
-## Resolution
+## Result and scope
 
-The device was restored to a healthy state and returned to service. The client was able to launch linux within their crostini vm.
+The student got a working device back the same day instead of a multi-day repair cycle. The case stayed at the help desk the whole way through: terminal error, OS update, sign-in failure, documented troubleshooting, and finally the reset. Each step followed from the evidence of the previous one rather than from guessing.
 
-## Key Takeaways
+## What this shows
 
-This case taught me how to balance technical troubleshooting with data preservation and user impact consideration. It is essential to figure out how to preserver client's data before making any changes to their system.
-
-## Skills Demonstrated
-
-- ChromeOS Administration
-- Endpoint Support
-- Troubleshooting
-- Risk Assessment
-- Customer Communication
+Endpoint troubleshooting under a real constraint. The NEED_UPDATE error had one reasonable response, and that response created a worse problem, which is exactly when discipline matters: work the documented steps, confirm each failure before moving on, and only take the destructive option when nothing else is left. It also shows comfort with the ChromeOS stack specifically, Crostini containers, cryptohome, and the recovery procedures around them.
