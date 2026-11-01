@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#migrating-research-data-while-resolving-storage-constraints" class="md-skip">
+        <a href="#migrating-930-gib-past-a-cephfs-quota-failure" class="md-skip">
           Skip to content
         </a>
       
@@ -1272,21 +1272,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
+  <a href="#the-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Environment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Problem
+        The problem
       
     </span>
   </a>
@@ -1298,6 +1287,39 @@
     <span class="md-ellipsis">
       
         Investigation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result-and-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result and scope
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-shows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What this shows
       
     </span>
   </a>
@@ -1394,21 +1416,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
+  <a href="#the-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Environment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Problem
+        The problem
       
     </span>
   </a>
@@ -1420,6 +1431,39 @@
     <span class="md-ellipsis">
       
         Investigation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result-and-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result and scope
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-shows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What this shows
       
     </span>
   </a>
@@ -1443,51 +1487,31 @@
 
 
 
-<h1 id="migrating-research-data-while-resolving-storage-constraints">Migrating Research Data While Resolving Storage Constraints</h1>
-<p><code>Linux</code> <code>Storage Troubleshooting</code> <code>Root Cause Analysis</code></p>
+<h1 id="migrating-930-gib-past-a-cephfs-quota-failure">Migrating 930 GiB Past a CephFS Quota Failure</h1>
+<p><code>Linux</code> <code>rsync</code> <code>CephFS</code> <code>Storage</code> <code>Troubleshooting</code></p>
 <h2 id="overview">Overview</h2>
-<p>During a data migration effort, a researcher needed to transfer data between storage locations. The migration process encountered storage limitations that prevented a straightforward transfer.</p>
-<p>The task requied troubleshooting filesystem behavior, identifying the root cause, and selecting an alternative migration approach.</p>
-<h2 id="environment">Environment</h2>
-<ul>
-<li>Linux</li>
-<li>rsync</li>
-<li>Research Storage Systems</li>
-<li>Large Dataset</li>
-<li>Command-Line Interface</li>
-</ul>
-<h2 id="problem">Problem</h2>
-<p>A researcher needed to transfer a large dataset between storage locations.</p>
-<p>The transfer repeatedly failed with disk quoate and storage-capacity related errors despite the destination filesystem appearing to have available space.</p>
+<p>I received a request to move a dataset of over 930 GiB from <code>/home/h/&lt;user_redacted&gt;/DSCOVR</code> to <code>/staging/h/&lt;user_redacted&gt;</code>. I chose rsync over a plain <code>mv</code> because rsync can resume after a failure instead of starting over. That choice paid off: the transfer failed partway through, and the fix required understanding CephFS directory quotas.</p>
+<h2 id="the-problem">The problem</h2>
+<p>Shortly after I initiated the move, rsync failed with:</p>
+<pre><code>Disk quota exceeded (122)
+rsync error: error in file IO (code 11)
+rsync: [sender] write error: Broken pipe (32)
+</code></pre>
+<p>The destination filesystem had free space, so the quota being exceeded was not the disk filling up. It was a CephFS directory quota on the destination path, a separate administrative limit from overall capacity. Acting on the face-value reading, finding more space, would have wasted the effort; the actual limit was a quota that someone had to raise.</p>
 <h2 id="investigation">Investigation</h2>
-<p>I examined the <code>rsync</code> output and verified destination storage characteristics.</p>
-<p>To understand the failure, I:</p>
-<ul>
-<li>Reviewed erro messages generated by <code>rsync</code></li>
-<li>Compared reported quota limits against the requested transfer size</li>
-<li>Verified filesystem usage and available capacity</li>
-<li>Considered the difference between overall filesystem space and user-specific quoata allocations</li>
-</ul>
-<h1 id="actions-taken">Actions Taken</h1>
-<ul>
-<li>Confirmed the failure was quoate related</li>
-<li>Worked with a research facilitator to increase the researcher's quoata limits</li>
-<li>Validated available storage before restarting the transfer</li>
-<li>Re-ran the migration using <code>rsync</code></li>
-<li>Monitored transfer progress and verified completion</li>
-</ul>
-<h2 id="outcome">Outcome</h2>
-<p>The migration completed successfully once the destination storage constraints were addressed. And the researcher was able to continue working with the required data.</p>
-<h2 id="key-takeaways">Key Takeaways</h2>
-<p>I understood storage systems, filesystem constraints, and the importance of validating assumptions before large-scale data transfers.</p>
-<h2 id="skills-demonstrated">Skills Demonstrated</h2>
-<ul>
-<li>Linux Administration</li>
-<li>Storage Troubleshooting</li>
-<li>Data Migration</li>
-<li>Root Cause Analysis</li>
-<li>Problem Solving</li>
-</ul>
+<p>I investigated the CephFS quota wrapper scripts, <code>set_cephfs_dir_quota_items</code> and <code>set_cephfs_dir_quota_size</code>, to understand how the cluster applied quotas to directories. The scripts ultimately expanded into <code>setfattr</code> commands setting <code>ceph.quota.max_bytes</code> and <code>ceph.quota.max_files</code> on the directory. That told me exactly which two settings controlled the failure. They were the maximum file count and the maximum byte count under the destination path.</p>
+<h2 id="fix">Fix</h2>
+<p>I asked one of the research computing facilitators (RCFs) what the quotas should be, and they specified 500,000 files and 1.5 TiB. I set the file count quota first:</p>
+<pre><code>set_cephfs_dir_quota_items 500000 /staging/h/&lt;user_redacted&gt;
+</code></pre>
+<p>Then the size quota, passing gibibytes as the script expects (1.5 TiB is 1536 GiB):</p>
+<pre><code>set_cephfs_dir_quota_size 1536 /staging/h/&lt;user_redacted&gt;
+</code></pre>
+<p>The script converted 1536 GiB to bytes (1536 * 1024 * 1024 * 1024) and applied it via <code>setfattr</code>. With both quotas raised, I re-ran the rsync migration. Because rsync resumes rather than restarts, the transfer picked up where it had failed instead of re-sending 930 GiB from scratch. I monitored it through to verified completion.</p>
+<h2 id="result-and-scope">Result and scope</h2>
+<p>The full dataset migrated successfully once the CephFS quotas reflected the actual need. The value of the work was in two decisions: choosing rsync up front so a failure would be resumable, and reading the quota wrapper scripts to learn the mechanism instead of guessing.</p>
+<h2 id="what-this-shows">What this shows</h2>
+<p>This case demonstrates storage troubleshooting that goes below the surface, combined with deliberate tool choice. When rsync reports a quota error but the filesystem has free space, the right move is to identify the actual quota mechanism, in this case CephFS directory quotas applied through <code>setfattr</code>, and work with it directly. The failed first attempt cost minutes instead of hours because rsync resumes where it stopped, while <code>mv</code> would have started over.</p>
 
 
 

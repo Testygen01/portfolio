@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#recoving-a-chromeos-device-from-cryptohome-failure" class="md-skip">
+        <a href="#recovering-a-chromebook-from-cryptohome-failure" class="md-skip">
           Skip to content
         </a>
       
@@ -922,10 +922,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
+  <a href="#the-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Environment
+        The problem
       
     </span>
   </a>
@@ -933,10 +933,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
+  <a href="#investigation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Problem
+        Investigation
       
     </span>
   </a>
@@ -944,10 +944,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#actions-take" class="md-nav__link">
+  <a href="#fix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Actions Take
+        Fix
       
     </span>
   </a>
@@ -955,10 +955,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resolution" class="md-nav__link">
+  <a href="#result-and-scope" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resolution
+        Result and scope
       
     </span>
   </a>
@@ -966,21 +966,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
+  <a href="#what-this-shows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Takeaways
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#skills-demonstrated" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Skills Demonstrated
+        What this shows
       
     </span>
   </a>
@@ -1427,10 +1416,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
+  <a href="#the-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Environment
+        The problem
       
     </span>
   </a>
@@ -1438,10 +1427,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
+  <a href="#investigation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Problem
+        Investigation
       
     </span>
   </a>
@@ -1449,10 +1438,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#actions-take" class="md-nav__link">
+  <a href="#fix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Actions Take
+        Fix
       
     </span>
   </a>
@@ -1460,10 +1449,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resolution" class="md-nav__link">
+  <a href="#result-and-scope" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resolution
+        Result and scope
       
     </span>
   </a>
@@ -1471,21 +1460,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
+  <a href="#what-this-shows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Takeaways
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#skills-demonstrated" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Skills Demonstrated
+        What this shows
       
     </span>
   </a>
@@ -1509,38 +1487,20 @@
 
 
 
-<h1 id="recoving-a-chromeos-device-from-cryptohome-failure">Recoving a ChromeOS Device from Cryptohome Failure</h1>
-<p><code>ChromeOS</code> <code>Endpoint Support</code> <code>Troubleshooting</code> <code>Customer Communication</code></p>
+<h1 id="recovering-a-chromebook-from-cryptohome-failure">Recovering a Chromebook from Cryptohome Failure</h1>
+<p><code>ChromeOS</code> <code>Crostini</code> <code>Endpoint Support</code> <code>Troubleshooting</code></p>
 <h2 id="overview">Overview</h2>
-<p>A ChromeOS device experienced Linux terminal failures caused by operating system and cryptohome issues.</p>
-<h2 id="environment">Environment</h2>
-<ul>
-<li>ChromeOS</li>
-<li>Crostini Linux</li>
-<li>Student Laptop</li>
-</ul>
-<h2 id="problem">Problem</h2>
-<p>The Linux development environment would not launch and stand user functionality was impacted.</p>
-<h2 id="actions-take">Actions Take</h2>
-<ul>
-<li>Performed operating system updates</li>
-<li>Attempted standard recovery procedures</li>
-<li>Evaluated user data implications</li>
-<li>Confirmed recovery options from vendor documentation</li>
-<li>Executed a Powerwash reset</li>
-</ul>
-<h2 id="resolution">Resolution</h2>
-<p>The device was restored to a healthy state and returned to service. The client was able to launch linux within their crostini vm.</p>
-<h2 id="key-takeaways">Key Takeaways</h2>
-<p>This case taught me how to balance technical troubleshooting with data preservation and user impact consideration. It is essential to figure out how to preserver client's data before making any changes to their system.</p>
-<h2 id="skills-demonstrated">Skills Demonstrated</h2>
-<ul>
-<li>ChromeOS Administration</li>
-<li>Endpoint Support</li>
-<li>Troubleshooting</li>
-<li>Risk Assessment</li>
-<li>Customer Communication</li>
-</ul>
+<p>A student's Chromebook could not launch its Linux terminal, and the repair path led through a ChromeOS update into a cryptohome mount failure that locked the student out of the device entirely. A Powerwash reset resolved it. The case is a clean example of escalation discipline: non-destructive steps first, documented procedures next, destructive reset only after I had exhausted the alternatives.</p>
+<h2 id="the-problem">The problem</h2>
+<p>The student needed terminal access, so I started the penguin container, the default Crostini Linux container on ChromeOS. It failed with <code>Error starting crostini for terminal: 62 (NEED_UPDATE)</code>. The error code pointed at the operating system itself: the installed ChromeOS version was too old for the terminal to start. That made the next step obvious, but the step after it was not.</p>
+<h2 id="investigation">Investigation</h2>
+<p>Following a documented troubleshooting path, I updated ChromeOS on the device, which is the reasonable response to a NEED_UPDATE error. The update completed and I rebooted. The student then could not sign back in at all: the device reported <code>can't mount crypto home</code>. Cryptohome is ChromeOS's encrypted per-user storage, so a mount failure there means the user's entire profile, including the Crostini container, is unreachable. I worked through the troubleshooting steps in Google's support documentation for this exact error, and none of them resolved it.</p>
+<h2 id="fix">Fix</h2>
+<p>With the documented non-destructive steps exhausted, I reset the Chromebook with a Powerwash, which returns it to its factory state. That resolved the mount failure and the device came back healthy. A Powerwash erases local data, so this was not a step to take lightly; it was the last resort after the update path and the support documentation both failed. I want to report the outcome precisely: I restored the device to service, but I do not have a record of which local files, if any, the student lost in the reset.</p>
+<h2 id="result-and-scope">Result and scope</h2>
+<p>The student got a working device back the same day instead of a multi-day repair cycle. The case stayed at the help desk the whole way through: terminal error, OS update, sign-in failure, documented troubleshooting, and finally the reset. Each step followed from the evidence of the previous one rather than from guessing.</p>
+<h2 id="what-this-shows">What this shows</h2>
+<p>This case demanded disciplined endpoint troubleshooting under a real constraint. The NEED_UPDATE error had one reasonable response, and that response created a worse problem, which is exactly when discipline matters most: I worked the documented steps, confirmed each failure before moving on, and took the destructive step only after nothing else remained. It also demonstrates working knowledge of the ChromeOS stack, including Crostini containers, cryptohome, and the recovery procedures around them.</p>
 
 
 

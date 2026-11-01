@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#diagnosing-a-multi-factor-authentication-browser-compatibility-issue" class="md-skip">
+        <a href="#diagnosing-an-mfa-browser-compatibility-issue" class="md-skip">
           Skip to content
         </a>
       
@@ -950,10 +950,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
+  <a href="#the-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Environment
+        The problem
       
     </span>
   </a>
@@ -961,10 +961,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
+  <a href="#investigation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Problem
+        Investigation
       
     </span>
   </a>
@@ -972,10 +972,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#actions-take" class="md-nav__link">
+  <a href="#resolution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Actions Take
+        Resolution
       
     </span>
   </a>
@@ -983,10 +983,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#outcome" class="md-nav__link">
+  <a href="#result-and-scope" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Outcome
+        Result and scope
       
     </span>
   </a>
@@ -994,21 +994,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
+  <a href="#what-this-shows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Takeaways
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#skills-demonstrated" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Skills Demonstrated
+        What this shows
       
     </span>
   </a>
@@ -1427,10 +1416,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
+  <a href="#the-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Environment
+        The problem
       
     </span>
   </a>
@@ -1438,10 +1427,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
+  <a href="#investigation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Problem
+        Investigation
       
     </span>
   </a>
@@ -1449,10 +1438,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#actions-take" class="md-nav__link">
+  <a href="#resolution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Actions Take
+        Resolution
       
     </span>
   </a>
@@ -1460,10 +1449,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#outcome" class="md-nav__link">
+  <a href="#result-and-scope" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Outcome
+        Result and scope
       
     </span>
   </a>
@@ -1471,21 +1460,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
+  <a href="#what-this-shows" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Takeaways
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#skills-demonstrated" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Skills Demonstrated
+        What this shows
       
     </span>
   </a>
@@ -1509,40 +1487,20 @@
 
 
 
-<h1 id="diagnosing-a-multi-factor-authentication-browser-compatibility-issue">Diagnosing a Multi-Factor Authentication Browser Compatibility Issue</h1>
-<p><code>MFA</code> <code>Security</code> <code>Authentication</code> <code>Communication</code></p>
+<h1 id="diagnosing-an-mfa-browser-compatibility-issue">Diagnosing an MFA Browser Compatibility Issue</h1>
+<p><code>MFA</code> <code>FIDO2</code> <code>Authentication</code> <code>Customer Support</code></p>
 <h2 id="overview">Overview</h2>
-<p>A user experienced authentication failures when attempting to use a hardware security key and biometric authentication workflow on macOS.</p>
-<h2 id="environment">Environment</h2>
-<ul>
-<li>DUO MFA</li>
-<li>FIDO2 Authentication</li>
-<li>Firefox</li>
-<li>macOS</li>
-</ul>
-<h2 id="problem">Problem</h2>
-<p>The user was unable to complete authentication in Firefox browser despite having valid credentials and hardware-based authentication methods available.</p>
-<h2 id="actions-take">Actions Take</h2>
-<ul>
-<li>Reviewed user's authenticatin workflow</li>
-<li>Identified browser-specific limitations impacting FIDO2 functionality</li>
-<li>Verified the issue was browser-dependent using DUO documentation</li>
-<li>Identified compatibility limitations</li>
-<li>Explained supported authentication methods to client</li>
-<li>Guided the user through alternative secure login options</li>
-</ul>
-<h2 id="outcome">Outcome</h2>
-<p>The user successfully authenticated using an alternative, supported method. </p>
-<h2 id="key-takeaways">Key Takeaways</h2>
-<p>This experience reinforced the importance of understanding authentication technologies and communicating technical limitations clearly to end users.</p>
-<h2 id="skills-demonstrated">Skills Demonstrated</h2>
-<ul>
-<li>MFA Administration</li>
-<li>Security Awareness</li>
-<li>Authentication Technologies</li>
-<li>Troubleshooting</li>
-<li>Technical Communication</li>
-</ul>
+<p>A user on macOS could not complete Passwordless authentication in Firefox. The credentials were valid and the user had hardware-based authentication available, but the login would not finish. The cause was a documented browser limitation, not anything wrong with the user's account or devices, and the fix was guidance, not a configuration change.</p>
+<h2 id="the-problem">The problem</h2>
+<p>The failure was specific to the browser. The user had Touch ID and a security key available on macOS, and both should have worked for Passwordless login. In Firefox, neither did. That pattern pointed away from the account or the authenticator and toward how Firefox handled the authentication flow on macOS.</p>
+<h2 id="investigation">Investigation</h2>
+<p>I traced the login attempt to the exact point of failure: the step where the browser hands off to the hardware authenticator. Per Duo's documentation, Firefox on macOS does not support Touch ID because it lacks the necessary FIDO2 support, and it cannot prompt for the security key's PIN to satisfy the Passwordless user-verification requirement. On macOS, Firefox only supports Duo Push for Passwordless authentication. That confirmed the issue was browser-dependent. The user's credentials, security key, and enrollment were all fine; the browser simply could not complete the ceremony the login required.</p>
+<h2 id="resolution">Resolution</h2>
+<p>With the cause confirmed in Duo's documentation, I explained the limitation in plain terms and guided the user to authenticate with Duo Push, the supported Passwordless method in Firefox on macOS. The user had walked in thinking their key or account was broken, and the fix needed them to understand that neither was true. No account changes, no re-enrollment, no weakening of the security posture.</p>
+<h2 id="result-and-scope">Result and scope</h2>
+<p>I unblocked the user in a single support interaction, with no backend intervention. The case never needed to leave the tier where it arrived; it needed someone to identify that the browser, not the identity, was the problem, and to translate that finding into an action the user could take immediately.</p>
+<h2 id="what-this-shows">What this shows</h2>
+<p>This case came down to separating the layers of an authentication failure. Credentials, authenticator, and browser were three different suspects, and the evidence pointed at the browser. It also shows the value of checking vendor documentation before acting: without the Duo article confirming the Firefox on macOS limitation, the easy move would have been churning the user's account settings while the real cause sat untouched in the browser.</p>
 
 
 

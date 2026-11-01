@@ -1182,6 +1182,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HTCondor Node Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1198,6 +1216,102 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-central-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The central question
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#investigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Investigation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result-and-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result and scope
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-shows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What this shows
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1295,6 +1409,91 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-central-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The central question
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#investigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Investigation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fix
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result-and-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Result and scope
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-shows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What this shows
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1312,6 +1511,22 @@
 
 <h1 id="htcondor-node-troubleshooting">HTCondor Node Troubleshooting</h1>
 <p><code>Linux</code> <code>HTCondor</code> <code>Distributed Computing</code> <code>Troubleshooting</code></p>
+<h2 id="overview">Overview</h2>
+<p>I investigated an HTCondor execution node in the CHTC environment, e2466.chtc.wisc.edu, that did not appear to be functioning as expected. The node was visible in HTCondor status information, which indicated that it was successfully advertising itself to the collector. The node was not accepting jobs.</p>
+<h2 id="the-central-question">The central question</h2>
+<p>The investigation turned on a distinction that mattered for the whole diagnosis: a node being visible to the collector is not the same as a node actually being available to run jobs. If I had stopped at visibility, the node would have looked healthy. The question I had to answer was why a node that was advertising itself was not behaving like a healthy execution node.</p>
+<p>That question was sharper because of the node's recent history. The node had been drained and rebuilt about two days earlier, so it should have been receiving jobs again by the time I investigated it.</p>
+<h2 id="investigation">Investigation</h2>
+<p>I connected to the node with SSH and ran <code>condor_status</code>. That confirmed the starting observation: the node was present in HTCondor status information, yet it was not accepting jobs.</p>
+<p>From there, I checked the temporary Condor configuration file, <code>htcss.testing.config</code>, where temporary Condor configurations are written. In that file, I found a line setting <code>PreventJobsReason</code>, a setting that gives a reason why a job should be prevented from running on a specific node. That line explained the symptom I was seeing. The node could advertise itself to the collector while still being prevented from accepting jobs.</p>
+<h2 id="fix">Fix</h2>
+<p>I commented out the <code>PreventJobsReason</code> line and restarted Condor. I then checked the Condor systemd service with <code>systemctl status condor</code> to confirm that the service was running. I also checked the process tree and confirmed that <code>condor_master</code>, <code>condor_shared_port</code>, and <code>condor_startd</code> were present.</p>
+<h2 id="verification">Verification</h2>
+<p>After the fix, I verified the node by watching its behavior rather than relying on visibility alone. Queued jobs claimed different slots on e2466, which showed that the node was accepting work as an execution point should.</p>
+<h2 id="result-and-scope">Result and scope</h2>
+<p>I restored the node to service as an execution point that could accept queued jobs. I do not have a number for the scale of the impact, and I am not estimating one here. In a system that queues jobs, an execution point that cannot accept jobs reduces the capacity available to that queue, so restoring a node that should already have been back in service mattered even without a job count attached to it.</p>
+<h2 id="what-this-shows">What this shows</h2>
+<p>This case demonstrates structured troubleshooting of a distributed system, end to end. I started from a precise symptom, separated visibility from availability, checked temporary configuration before assuming a deeper failure, made a single targeted change, and verified the result by watching jobs claim slots on the node.</p>
 
 
 
