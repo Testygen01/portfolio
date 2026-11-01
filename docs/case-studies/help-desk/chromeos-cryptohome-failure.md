@@ -23,4 +23,4 @@ The student got a working device back the same day instead of a multi-day repair
 
 ## What this shows
 
-Endpoint troubleshooting under a real constraint. The NEED_UPDATE error had one reasonable response, and that response created a worse problem, which is exactly when discipline matters: work the documented steps, confirm each failure before moving on, and only take the destructive option when nothing else is left. It also shows comfort with the ChromeOS stack specifically, Crostini containers, cryptohome, and the recovery procedures around them.
+This case shows endpoint troubleshooting under a real constraint. The NEED_UPDATE error had one reasonable response, and that response created a worse problem, which is exactly when discipline matters most: I worked the documented steps, confirmed each failure before moving on, and took the destructive option only after nothing else remained. It also demonstrates working knowledge of the ChromeOS stack, including Crostini containers, cryptohome, and the recovery procedures around them.

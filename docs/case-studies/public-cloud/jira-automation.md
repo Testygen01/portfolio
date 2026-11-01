@@ -7,7 +7,7 @@ During my rotation with the DoIT Public Cloud Team, I built seven Jira Cloud aut
 
 ## The problem
 
-Two problems. First, an alert queue automation created before my time collected every AWS health alert ticket into one queue. Over time the ticket count kept growing, clogging the UI and burying anything important. That is classic alert fatigue: when everything is an alert, nothing is. Second, tickets that went stale sat untouched with no nudge to the owner, so the backlog grew instead of resolving.
+There were two problems. First, an alert queue automation created before my time collected every AWS health alert ticket into one queue. Over time the ticket count kept growing, clogging the UI and burying anything important. That is classic alert fatigue: when everything is an alert, nothing is. Second, tickets that went stale sat untouched with no nudge to the owner, so the backlog grew instead of resolving.
 
 ## How I built it
 

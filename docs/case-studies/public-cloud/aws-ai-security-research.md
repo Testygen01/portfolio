@@ -21,4 +21,4 @@ The spreadsheet gave stakeholders a single reference for license terms across th
 
 ## What this shows
 
-Comfort operating one level up from the keyboard: turning a vague institutional question (who supports which AI service?) into a concrete research artifact, license terms linked and comparable, that decision-makers could actually use. It also shows I understand the support boundary problem from both sides, having worked on the Public Cloud team while coordinating with PCS, the SaaS team.
+This case shows I am comfortable operating one level up from the keyboard. I turned a vague institutional question, which team supports which AI service, into a concrete research artifact with license terms linked and comparable, so that decision-makers could actually use it. It also shows I understand the support boundary problem from both sides, having worked on the Public Cloud team while coordinating with PCS, the SaaS team.

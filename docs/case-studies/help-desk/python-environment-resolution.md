@@ -23,4 +23,4 @@ The student was unblocked and able to continue coursework the same day. The issu
 
 ## What this shows
 
-Structured troubleshooting of a developer environment, plus restraint. Check the ground truth first, fix the specific mismatch, and expect the next layer: version changes in Conda frequently surface dependency errors like the missing menuinst module, and knowing to resolve them in sequence instead of starting over is what keeps a ten-minute fix from becoming a reinstall.
+This case shows structured troubleshooting of a developer environment, combined with restraint. I checked the ground truth first, fixed the specific mismatch, and expected the next layer: version changes in Conda frequently surface dependency errors like the missing menuinst module, and resolving them in sequence instead of starting over is what keeps a ten-minute fix from becoming a reinstall.

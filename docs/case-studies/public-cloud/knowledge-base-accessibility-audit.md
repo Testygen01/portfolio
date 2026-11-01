@@ -19,4 +19,4 @@ About 160 articles reviewed and remediated over roughly two months, interleaved 
 
 ## What this shows
 
-Accessibility treated as engineering work, not a checkbox: find the recurring patterns, fix them at scale, then change the process so the problems stop being created. It also shows sustained execution, two months of steady audit work carried alongside everything else on my plate.
+This case treats accessibility as engineering work, not a checkbox exercise. I found the recurring patterns, fixed them at scale across 160 articles, and then changed the process so the problems would stop being created. It also shows sustained execution: two months of steady audit work carried alongside everything else on my plate.

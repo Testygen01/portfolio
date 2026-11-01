@@ -19,7 +19,7 @@ The destination filesystem had free space, so the quota being exceeded was not t
 
 ## Investigation
 
-I investigated the CephFS quota wrapper scripts, `set_cephfs_dir_quota_items` and `set_cephfs_dir_quota_size`, to understand how quotas were applied on the cluster. The scripts ultimately expanded into `setfattr` commands setting `ceph.quota.max_bytes` and `ceph.quota.max_files` on the directory. That told me exactly which two knobs controlled the failure: the maximum file count and the maximum byte count under the destination path. Reading the mechanism beat guessing at it.
+I investigated the CephFS quota wrapper scripts, `set_cephfs_dir_quota_items` and `set_cephfs_dir_quota_size`, to understand how quotas were applied on the cluster. The scripts ultimately expanded into `setfattr` commands setting `ceph.quota.max_bytes` and `ceph.quota.max_files` on the directory. That told me exactly which two knobs controlled the failure: the maximum file count and the maximum byte count under the destination path.
 
 ## Fix
 
@@ -43,4 +43,4 @@ The full dataset migrated successfully once the CephFS quotas reflected the actu
 
 ## What this shows
 
-Storage troubleshooting below the surface, plus tool choice with failure in mind. When rsync says quota but the filesystem says space, find the quota mechanism, here CephFS directory quotas via `setfattr`, and work it directly. And the reason the failed first attempt cost minutes instead of hours is the tool choice: rsync resumes, `mv` does not.
+This case demonstrates storage troubleshooting that goes below the surface, combined with deliberate tool choice. When rsync reports a quota error but the filesystem has free space, the right move is to identify the actual quota mechanism, in this case CephFS directory quotas applied through `setfattr`, and work with it directly. The failed first attempt cost minutes instead of hours for one reason: rsync resumes where it stopped, while `mv` would have started over.

@@ -23,4 +23,4 @@ The user was unblocked in a single support interaction with no backend intervent
 
 ## What this shows
 
-Authentication troubleshooting that separates the layers. Credentials, authenticator, and browser are three different suspects, and the evidence here convicted the browser. It also shows the value of checking vendor documentation before acting: without the Duo article confirming the Firefox on macOS limitation, the easy move would have been churning the user's account settings while the real cause sat untouched in the browser.
+This case shows authentication troubleshooting that separates the layers. Credentials, authenticator, and browser were three different suspects, and the evidence pointed at the browser. It also shows the value of checking vendor documentation before acting: without the Duo article confirming the Firefox on macOS limitation, the easy move would have been churning the user's account settings while the real cause sat untouched in the browser.
