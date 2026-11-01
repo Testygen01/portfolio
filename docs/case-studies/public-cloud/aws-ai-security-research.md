@@ -1,45 +1,24 @@
-# Researching Security Governance for AI Services
-`AI` `Cloud` `Research` `Collaboration` `Technical Writing`
+# Mapping AI Service Support Ownership
+`Cloud AI` `SaaS` `Technical Research` `Stakeholder Collaboration`
 
-## Overview 
+## Overview
 
-As cloud providers rapidly expand their AI offerings, organizations and teams faced new governance and security challenges. During this project, I conducted research into AI-related cloud services and contributed internal guidance focused on secure and responsible adoption.
+As providers expanded their AI offerings, the university needed to decide which AI services it would officially support, and which team would own that support: PCS (Productivity and Collaboration Services, essentially the SaaS team) or the Public Cloud team. I contributed license research on eight Google AI services, linked into a spreadsheet table, as the first step in that decision.
 
-## Environment
+## The problem
 
-- Amazon Bedrock
-- Amazon SageMaker AI
-- Google AI Services
-- Security Best Practices
+New AI services were arriving faster than support decisions. Without knowing each service's licensing terms, the university could not determine which services it could support, under what terms, or which team should own them. The decision involved important stakeholders because it would set which AI tools the university stood behind.
 
-## Problem
+## What I did
 
-The Cloud team needed a clearer guidance regarding the capabilities, support boundaries, and security considerations associated with cloud-based AI services.
+I researched license information for eight Google AI services: NotebookLM, Gemini Workspace (Web Assistant), Workspace Studio, Antigravity CLI, Jules, the Gemini Enterprise Agent Platform, Gemini Looker, and Vertex AI. I linked each service's license information into a spreadsheet table so the decision-makers could compare them side by side. That table was the first step toward answering the ownership question: for each service, PCS or Public Cloud.
 
-## Actions Taken
+To be honest about my role: my contribution was the license research and the table. The support-ownership decision itself was made by others. But I was in the conversations where the university worked through which AI services it would support, and that is the part of this work I value most.
 
-I performed research across AWS and Google AI offerings to better understand service capabilities, governance requirements, and associated security risks. I also collaborated with team members to clarify service ownership and support responsibilites across the Cloud team and PCS.
+## Result and scope
 
-Actions I took:
-- Researched GOogle and AWS AI offerings
-- Documented service information for internal team use
-- Investigated AWS AI services and related governance concerns
-- Developed an internal AI security best-practices guide
-- Documented recommended guardrails and governance considerations for AI workloads
+The spreadsheet gave stakeholders a single reference for license terms across the eight services, feeding directly into the PCS-versus-Public-Cloud support decision. I do not know whether the guide saw continued use after the decision, and I am not claiming more than the research step I owned.
 
-## Outcome
+## What this shows
 
-The resulting documented guidance provided team members with a reference framework for evaluating AI-related cloud services and supporting secure adoption practices. This project also improved unit-level awareness of AI governance considerations.
-
-## Key Takeaways
-
-The number of AI service offerings keeps growing and it is critical teams maintain a good security posture before adopting these services. 
-
-## Skills Demonstrated
-
-- AI Governance
-- Cloud Security
-- Technical Research
-- Risk Analysis
-- Technical Writing
-- Cross-Team Collaboration
+This case shows I am comfortable operating one level up from the keyboard. I turned a vague institutional question, which team supports which AI service, into a concrete research artifact with license terms linked and comparable, so that decision-makers could actually use it. It also shows I understand the support boundary problem from both sides, having worked on the Public Cloud team while coordinating with PCS, the SaaS team.
