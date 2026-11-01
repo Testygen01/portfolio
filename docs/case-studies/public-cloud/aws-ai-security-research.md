@@ -13,7 +13,7 @@ New AI services were arriving faster than support decisions. Without knowing eac
 
 I researched license information for eight Google AI services: NotebookLM, Gemini Workspace (Web Assistant), Workspace Studio, Antigravity CLI, Jules, the Gemini Enterprise Agent Platform, Gemini Looker, and Vertex AI. I linked each service's license information into a spreadsheet table so the decision-makers could compare them side by side. That table was the first step toward answering the ownership question: for each service, PCS or Public Cloud.
 
-I am stating my role honestly: my contribution was the license research and the table. The support-ownership decision itself was made by others. But I was in the conversations where the university worked through which AI services it would support, and that is the part of this work I value most.
+To be honest about my role: my contribution was the license research and the table. The support-ownership decision itself was made by others. But I was in the conversations where the university worked through which AI services it would support, and that is the part of this work I value most.
 
 ## Result and scope
 

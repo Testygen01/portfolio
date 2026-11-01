@@ -11,7 +11,7 @@ Cloud projects on the team varied widely in architecture, data handling, and acc
 
 ## How we worked
 
-This was a collaboration with Pam Snyder, the team's cloud security analyst. We held project meetings at least twice a week. Pam led on the security concepts, since that is her specialty, and each meeting established what needed to be done next. Because she was busier than I was, I did the writing: I drafted each question, and in the following meeting we reviewed them together and cross-matched every question to the relevant NIST and CIS controls. The questions cover four areas: data storage and protection, identity and access management, resource governance, and network access.
+This was a collaboration with Pam Snyder, the team's cloud security analyst. We held project meetings at least twice a week. Pam led on the security concepts, since that is her specialty, and each meeting established what needed to be done next. Because she was busier than I was, I wrote each question, and in the following meeting we reviewed them together and cross-matched every question to the relevant NIST and CIS controls. The questions cover four areas: data storage and protection, identity and access management, resource governance, and network access.
 
 ## The questions
 
@@ -25,8 +25,8 @@ Each question is written so a project owner can answer it directly, and each map
 
 ## Result and scope
 
-Before my rotation ended, all nine questions were drafted and matched to CIS and NIST controls, and the set was sent to the team's Cloud Engineers for review. The review was still open when I rotated off. I met with Pam afterward and she confirmed the engineers finished their reviews. The plan is to use the question set for cybersecurity assessments of cloud-based projects to evaluate security risk. I do not have a count of projects assessed with it, since that work happened after I left, so I am stating the outcome honestly: a completed, peer-reviewed framework ready for use.
+Before my rotation ended, I had drafted all nine questions, we had matched them to CIS and NIST controls, and we sent the set to the team's Cloud Engineers for review. The review was still open when I rotated off. I met with Pam afterward and she confirmed the engineers finished their reviews. The plan is to use the question set for cybersecurity assessments of cloud-based projects to evaluate security risk. I do not have a count of projects assessed with it, since that work happened after I left, so I will state the outcome plainly: a completed, peer-reviewed framework ready for use.
 
 ## What this shows
 
-I can take a security concept from a senior analyst and turn it into a concrete, usable work product: drafting precise questions, mapping them to framework controls, and driving a review to completion across a team. The work was collaborative throughout, with Pam setting the security direction and me producing the drafts and the control mappings we reviewed together.
+I can take a security concept from a senior analyst and turn it into a concrete, usable work product. I drafted precise questions, mapped them to framework controls, and drove the review to completion across the team. We collaborated throughout: Pam set the security direction while I produced the drafts and the control mappings we reviewed together.

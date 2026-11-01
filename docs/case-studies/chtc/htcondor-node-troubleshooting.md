@@ -24,12 +24,12 @@ I commented out the `PreventJobsReason` line and restarted Condor. I then checke
 
 ## Verification
 
-After the fix, I verified the node by watching its behavior rather than relying on visibility alone. Different slots on e2466 were claimed by queued jobs, which showed that the node was now accepting work as an execution point should.
+After the fix, I verified the node by watching its behavior rather than relying on visibility alone. Queued jobs claimed different slots on e2466, which showed that the node was accepting work as an execution point should.
 
 ## Result and scope
 
-The node was restored to service as an execution point that could accept queued jobs. I do not have a number for the scale of the impact, and I am not estimating one here. In a system that queues jobs, an execution point that cannot accept jobs reduces the capacity available to that queue, so restoring a node that should already have been back in service mattered even without a job count attached to it.
+I restored the node to service as an execution point that could accept queued jobs. I do not have a number for the scale of the impact, and I am not estimating one here. In a system that queues jobs, an execution point that cannot accept jobs reduces the capacity available to that queue, so restoring a node that should already have been back in service mattered even without a job count attached to it.
 
 ## What this shows
 
-This case shows structured troubleshooting of a distributed system: starting from a precise symptom, separating visibility from availability, checking temporary configuration before assuming a deeper failure, making a single targeted change, and verifying the result by observing jobs claim slots on the node.
+This case demonstrates structured troubleshooting of a distributed system, end to end. I started from a precise symptom, separated visibility from availability, checked temporary configuration before assuming a deeper failure, made a single targeted change, and verified the result by watching jobs claim slots on the node.

@@ -3,7 +3,7 @@
 
 ## Overview
 
-A student's Chromebook could not launch its Linux terminal, and the repair path led through a ChromeOS update into a cryptohome mount failure that locked the student out of the device entirely. A Powerwash reset resolved it. The case is a clean example of escalation discipline: non-destructive steps first, documented procedures next, destructive reset only after the alternatives were exhausted.
+A student's Chromebook could not launch its Linux terminal, and the repair path led through a ChromeOS update into a cryptohome mount failure that locked the student out of the device entirely. A Powerwash reset resolved it. The case is a clean example of escalation discipline: non-destructive steps first, documented procedures next, destructive reset only after I had exhausted the alternatives.
 
 ## The problem
 
@@ -15,7 +15,7 @@ Following a documented troubleshooting path, I updated ChromeOS on the device, w
 
 ## Fix
 
-With the documented non-destructive steps exhausted, I performed a Powerwash, which returns the Chromebook to its factory state. That resolved the mount failure and the device came back healthy. A Powerwash erases local data, so this was not a step to take lightly; it was the last resort after the update path and the support documentation both failed. I am reporting the outcome honestly: the device was restored to service, and I do not have a record of which local files, if any, the student lost in the reset.
+With the documented non-destructive steps exhausted, I reset the Chromebook with a Powerwash, which returns it to its factory state. That resolved the mount failure and the device came back healthy. A Powerwash erases local data, so this was not a step to take lightly; it was the last resort after the update path and the support documentation both failed. I want to report the outcome precisely: I restored the device to service, but I do not have a record of which local files, if any, the student lost in the reset.
 
 ## Result and scope
 
@@ -23,4 +23,4 @@ The student got a working device back the same day instead of a multi-day repair
 
 ## What this shows
 
-This case shows endpoint troubleshooting under a real constraint. The NEED_UPDATE error had one reasonable response, and that response created a worse problem, which is exactly when discipline matters most: I worked the documented steps, confirmed each failure before moving on, and took the destructive option only after nothing else remained. It also demonstrates working knowledge of the ChromeOS stack, including Crostini containers, cryptohome, and the recovery procedures around them.
+This case demanded disciplined endpoint troubleshooting under a real constraint. The NEED_UPDATE error had one reasonable response, and that response created a worse problem, which is exactly when discipline matters most: I worked the documented steps, confirmed each failure before moving on, and took the destructive step only after nothing else remained. It also demonstrates working knowledge of the ChromeOS stack, including Crostini containers, cryptohome, and the recovery procedures around them.

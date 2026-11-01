@@ -3,7 +3,7 @@
 
 ## Overview
 
-During my rotation with the DoIT Public Cloud Team, I built seven Jira Cloud automation rules that triaged cloud alert tickets and kept stale tickets moving. One rule processed roughly 500 AWS health alert tickets: populating their fields, then closing them. Others moved untouched tickets into an autoresolution flow. Regex did the heavy lifting of pulling cloud account IDs out of ticket text, since Azure, AWS, and GCP each use a different ID format.
+During my rotation with the DoIT Public Cloud Team, I built seven Jira Cloud automation rules that triaged cloud alert tickets and kept stale tickets moving. One rule processed roughly 500 AWS health alert tickets. It populated their fields and then closed them. Others moved untouched tickets into an autoresolution flow. Regex did the heavy lifting of pulling cloud account IDs out of ticket text, since Azure, AWS, and GCP each use a different ID format.
 
 ## The problem
 
@@ -11,15 +11,15 @@ There were two problems. First, an alert queue automation created before my time
 
 ## How I built it
 
-I used Jira Cloud's built-in automation engine, no plugins. The core trick was regex. The rules needed the cloud account ID from each ticket's body or description to populate fields, but the three providers format IDs differently: Azure uses a GUID for the subscription ID, AWS uses a 12-digit numeric account ID, and GCP uses a project ID of 6 to 30 characters. One regex per format let a single rule handle tickets from all three clouds.
+I used Jira Cloud's built-in automation engine, no plugins. The core technique was regex. The rules needed the cloud account ID from each ticket's body or description to populate fields, but the three providers format IDs differently: Azure uses a GUID for the subscription ID, AWS uses a 12-digit numeric account ID, and GCP uses a project ID of 6 to 30 characters. One regex per format let a single rule handle tickets from all three clouds.
 
 ## The automations
 
 Three examples from the seven rules:
 
-1. **AWS health alert triage.** The rule picked up the backlog of about 500 AWS health alert tickets, populated fields including project, cloud provider, and cloud account ID (extracted with regex), then transitioned each ticket to Done. Critical alerts were retained, not swept up in the bulk close.
+1. **AWS health alert triage.** The rule picked up the backlog of about 500 AWS health alert tickets, populated fields including project, cloud provider, and cloud account ID (extracted with regex), then transitioned each ticket to Done. The rule retained critical alerts instead of sweeping them up in the bulk close.
 2. **Stale ticket nudge.** Tickets with no modification for one week moved to "Pending - Autoresolution," and the rule emailed the ticket owner and requestor asking for action.
-3. **Auto-close.** Tickets that sat in "Pending - Autoresolution" for another week were closed automatically.
+3. **Auto-close.** The rule closed tickets automatically after another week in "Pending - Autoresolution".
 
 ## Result and scope
 
@@ -27,4 +27,4 @@ The alert queue went from roughly 500 open alert tickets to a clean queue with o
 
 ## What this shows
 
-I can look at an operational pain point, in this case alert fatigue and ticket rot, and automate it away with the tools at hand. The regex work shows I think about real-world data formats rather than assuming clean input, and the autoresolution flow shows I design for the humans in the loop: warn first, then act.
+This work started from an operational pain point, alert fatigue and ticket rot, and ended with automation handling both. The regex work shows I think about real-world data formats rather than assuming clean input, and the autoresolution flow respects the humans in the loop by warning first and acting second.

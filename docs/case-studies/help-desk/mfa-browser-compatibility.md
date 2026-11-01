@@ -19,8 +19,8 @@ With the cause confirmed in Duo's documentation, I explained the limitation in p
 
 ## Result and scope
 
-The user was unblocked in a single support interaction with no backend intervention. The case never needed to leave the tier where it arrived; it needed someone to identify that the browser, not the identity, was the problem, and to translate that finding into an action the user could take immediately.
+I unblocked the user in a single support interaction, with no backend intervention. The case never needed to leave the tier where it arrived; it needed someone to identify that the browser, not the identity, was the problem, and to translate that finding into an action the user could take immediately.
 
 ## What this shows
 
-This case shows authentication troubleshooting that separates the layers. Credentials, authenticator, and browser were three different suspects, and the evidence pointed at the browser. It also shows the value of checking vendor documentation before acting: without the Duo article confirming the Firefox on macOS limitation, the easy move would have been churning the user's account settings while the real cause sat untouched in the browser.
+This case came down to separating the layers of an authentication failure. Credentials, authenticator, and browser were three different suspects, and the evidence pointed at the browser. It also shows the value of checking vendor documentation before acting: without the Duo article confirming the Firefox on macOS limitation, the easy move would have been churning the user's account settings while the real cause sat untouched in the browser.

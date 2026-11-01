@@ -3,7 +3,7 @@
 
 ## Overview
 
-I was asked to move a dataset of over 930 GiB from `/home/h/<user_redacted>/DSCOVR` to `/staging/h/<user_redacted>`. I chose rsync over a plain `mv` because rsync can resume after a failure instead of starting over. That choice paid off: the transfer failed partway through, and the fix required understanding CephFS directory quotas.
+I received a request to move a dataset of over 930 GiB from `/home/h/<user_redacted>/DSCOVR` to `/staging/h/<user_redacted>`. I chose rsync over a plain `mv` because rsync can resume after a failure instead of starting over. That choice paid off: the transfer failed partway through, and the fix required understanding CephFS directory quotas.
 
 ## The problem
 
@@ -19,7 +19,7 @@ The destination filesystem had free space, so the quota being exceeded was not t
 
 ## Investigation
 
-I investigated the CephFS quota wrapper scripts, `set_cephfs_dir_quota_items` and `set_cephfs_dir_quota_size`, to understand how quotas were applied on the cluster. The scripts ultimately expanded into `setfattr` commands setting `ceph.quota.max_bytes` and `ceph.quota.max_files` on the directory. That told me exactly which two knobs controlled the failure: the maximum file count and the maximum byte count under the destination path.
+I investigated the CephFS quota wrapper scripts, `set_cephfs_dir_quota_items` and `set_cephfs_dir_quota_size`, to understand how the cluster applied quotas to directories. The scripts ultimately expanded into `setfattr` commands setting `ceph.quota.max_bytes` and `ceph.quota.max_files` on the directory. That told me exactly which two settings controlled the failure. They were the maximum file count and the maximum byte count under the destination path.
 
 ## Fix
 
@@ -43,4 +43,4 @@ The full dataset migrated successfully once the CephFS quotas reflected the actu
 
 ## What this shows
 
-This case demonstrates storage troubleshooting that goes below the surface, combined with deliberate tool choice. When rsync reports a quota error but the filesystem has free space, the right move is to identify the actual quota mechanism, in this case CephFS directory quotas applied through `setfattr`, and work with it directly. The failed first attempt cost minutes instead of hours for one reason: rsync resumes where it stopped, while `mv` would have started over.
+This case demonstrates storage troubleshooting that goes below the surface, combined with deliberate tool choice. When rsync reports a quota error but the filesystem has free space, the right move is to identify the actual quota mechanism, in this case CephFS directory quotas applied through `setfattr`, and work with it directly. The failed first attempt cost minutes instead of hours because rsync resumes where it stopped, while `mv` would have started over.

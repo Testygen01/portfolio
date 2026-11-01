@@ -11,7 +11,7 @@ The knowledge base had grown through many contributors with varying accessibilit
 
 ## What I did
 
-I worked through the articles systematically with a repeatable pass: read for structure, check formatting consistency, verify accessibility, fix what was broken, and move on. Across the collection I corrected the recurring issue types above and standardized formatting where it had drifted, so the knowledge base reads as one coherent resource instead of 160 individual efforts. When the audit was complete, I presented the work to the team in a standup, walking through what I had found and fixed, and documented a reference framework so new documents could be written accessibly from the beginning rather than repaired afterward.
+I worked through the articles systematically with a repeatable pass: read for structure, check formatting consistency, verify accessibility, fix what was broken, and move on. Across the collection I corrected the recurring issue types above and standardized formatting where it had drifted, so the knowledge base reads as one coherent resource instead of 160 individual efforts. When the audit was complete, I presented the work to the team in a standup, walking through what I had found and fixed, and documented a reference framework so authors could write new documents accessibly from the beginning instead of repairing them afterward.
 
 ## Result and scope
 
@@ -19,4 +19,4 @@ About 160 articles reviewed and remediated over roughly two months, interleaved 
 
 ## What this shows
 
-This case treats accessibility as engineering work, not a checkbox exercise. I found the recurring patterns, fixed them at scale across 160 articles, and then changed the process so the problems would stop being created. It also shows sustained execution: two months of steady audit work carried alongside everything else on my plate.
+I treated accessibility as engineering work in this case, not a checkbox exercise. I found the recurring patterns, fixed them at scale across 160 articles, and then changed the process so the problems would stop being created. It also shows sustained execution: two months of steady audit work carried alongside everything else on my plate.

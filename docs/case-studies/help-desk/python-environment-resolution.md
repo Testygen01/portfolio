@@ -19,8 +19,8 @@ From the terminal I ran `conda install python=3.10.12`, which downgraded the env
 
 ## Result and scope
 
-The student was unblocked and able to continue coursework the same day. The issue was resolved at the help desk without escalation, which would have cost the student days of waiting for a problem that turned out to need two package installs. The value of the work was in the diagnosis: verifying what was actually installed before acting, rather than treating "does not work" as a single problem with a single fix.
+I unblocked the student, who continued coursework the same day. I resolved the issue at the help desk without escalation, which would have cost the student days of waiting for a problem that turned out to need two package installs. The value of the work was in the diagnosis: verifying what was actually installed before acting, rather than treating "does not work" as a single problem with a single fix.
 
 ## What this shows
 
-This case shows structured troubleshooting of a developer environment, combined with restraint. I checked the ground truth first, fixed the specific mismatch, and expected the next layer: version changes in Conda frequently surface dependency errors like the missing menuinst module, and resolving them in sequence instead of starting over is what keeps a ten-minute fix from becoming a reinstall.
+This case rewarded structured troubleshooting and restraint. I checked the ground truth first and fixed the specific mismatch instead of escalating, which would have cost the student days of waiting. Version changes in Conda frequently surface dependency errors like the missing menuinst module, and resolving them in sequence instead of starting over is what keeps a ten-minute fix from becoming a reinstall.

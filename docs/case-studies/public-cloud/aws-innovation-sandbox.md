@@ -11,7 +11,7 @@ AWS ships the Innovation Sandbox as a set of CloudFormation deployment templates
 
 ## What I did
 
-I sat in the requirements meetings where we worked out what the sandbox had to do, alongside the consultant and the team. Then I wrote the Terraform in live coding sessions over Teams video calls, with Kelly directing each session and telling me what to do as we went. I wrote the Terraform that deployed the AccountPool stacks, the IDC stack, the Data stack, and the Compute stack. Because the AWS templates were written for CloudFormation, I modified the .template and .yaml files so they could be deployed through Terraform.
+I sat in the requirements meetings where we worked out what the sandbox had to do, alongside the consultant and the team. Then I wrote the Terraform in live coding sessions over Teams video calls, with Kelly directing each session and telling me what to do as we went. I wrote the Terraform that deployed the AccountPool stacks, the IDC stack, the Data stack, and the Compute stack. Because the AWS templates were written for CloudFormation, I modified the .template and .yaml files so Terraform could deploy them.
 
 ## Blocker 1: no API for third-party SAML apps
 
@@ -27,4 +27,4 @@ I rotated off the team before the project finished, so I did not see the final d
 
 ## What this shows
 
-I can take vendor templates built for one tool and make them work in another, write Terraform for real multi-stack deployments under direction, and diagnose exactly where a provider's automation stops. The SAML gap was not a bug in our code. It was a missing API, and naming that precisely is what kept the team from burning time trying to automate the unautomatable.
+This project shows I can take vendor templates built for one tool and make them work in another. I wrote Terraform for real multi-stack deployments under direction, and I diagnosed exactly where a provider's automation stops. The SAML gap was not a bug in our code. It was a missing API, and naming that precisely is what kept the team from burning time trying to automate the unautomatable.
