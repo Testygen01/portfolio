@@ -8,7 +8,7 @@ Linux infrastructure and research computing, with hands-on experience in support
 
 I am participating in the University of Wisconsin-Madison Information Technology Job Rotation Program. Through my rotations so far, I have gained experience supporting end users, enabling cloud services, and administering research computing infrastructure.
 
-<!-- Start here: the only primary entry cards on this page. Keep to three cards, and do not repeat these links in Dig deeper. -->
+<!-- Start here: the only primary entry cards on this page. Keep to three cards. -->
 
 ## Start here
 
@@ -41,26 +41,6 @@ I am participating in the University of Wisconsin-Madison Information Technology
     - Enterprise Hardware Management
 
     [Read the CHTC rotation summary](rotations/chtc-summary.md)
-
-## Rotation Journey
-
-### DoIT General Help Desk
-
-Developed a foundation in troubleshooting, identity and access management, endpoint support, and customer service.
-
-[Help Desk summary](rotations/help-desk-summary.md)
-
-### DoIT Public Cloud Team
-
-Worked on cloud engineering, AWS governance, automation, security research, and Infrastructure as Code.
-
-[Public Cloud summary](rotations/public-cloud-summary.md)
-
-### Center for High Throughput Computing (CHTC)
-
-Supporting Linux infrastructure, HTCondor operations, storage systems, and research computing environments.
-
-[CHTC summary](rotations/chtc-summary.md)
 
 ## Featured Case Studies
 
@@ -100,25 +80,3 @@ Supporting Linux infrastructure, HTCondor operations, storage systems, and resea
 
     [Read the full case study](case-studies/public-cloud/jira-automation.md)
 
-## Technical Interests
-
-- Linux Systems Administration
-- Infrastructure Engineering
-- Distributed Systems
-- Storage Technologies
-- Automation
-- Networking
-- Configuration Management
-
-<!-- Dig deeper: About section pages only. Do not repeat Start here links here, so each link on this page has one clear purpose. -->
-
-## Dig deeper
-
-<div class="grid cards" markdown>
-
-- **Skills Matrix**
-    ---
-    Review technical skills, platforms, and professional competencies developed across rotations.
-    [Skills Matrix →](about/skills.md)
-
-</div>
