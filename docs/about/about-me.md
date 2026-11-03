@@ -1,11 +1,11 @@
 # About Me
 
-I am Justice Chukwuemeka, a Junior Systems Engineer in the University of Wisconsin-Madison Information Technology Job Rotation Program.
+I am Justice Chukwuemeka, a Systems Administrator in the University of Wisconsin-Madison Information Technology Job Rotation Program. I am on my third rotation at the Center for High Throughput Computing, where I keep Linux infrastructure running for the researchers who depend on them.
 
-I am on my third rotation, at the Center for High Throughput Computing (CHTC). There I work on Linux infrastructure, HTCondor operations, storage systems, and the research computing environments that scientists rely on to run large jobs.
+Before CHTC, I worked the DoIT General Help Desk and then the DoIT Public Cloud Team, where I went from supporting end-users in desktop computing to supporting stakeholders in a public cloud environment.
 
-Before CHTC, I worked on the DoIT General Help Desk, where I learned troubleshooting and support from the user side, and then on the DoIT Public Cloud Team, where I worked on AWS, governance, and automation. That path, from supporting users to running cloud services to running research infrastructure, is why I care about systems that are reliable, well documented, and easy to operate.
+For my fourth rotation in the program, I am looking for infrastructure or networking work, and I am also open to end-user computing roles with real systems depth.
 
-What I am working toward now is straightforward: become a strong systems engineer, built from the foundations up. That means Linux first, then networking, then systems operations, with depth in networking. For my fourth rotation, I am looking for infrastructure or networking work.
+My goal is to focus on learning infrastructure technologies to aid and consult members of the University community in the design, security, and operations of research computing.
 
-This portfolio is a record of that work. The case studies show how I approached real problems, what I tried, and what I learned, not just a list of tools I have touched.
+The case studies show how I approached real problems, what I tried, and what I learned.
