@@ -44,8 +44,6 @@ I am participating in the University of Wisconsin-Madison Information Technology
 
 ## Rotation Journey
 
-For a detailed view of my progression through the program, see the **Timeline** page.
-
 ### DoIT General Help Desk
 
 Developed a foundation in troubleshooting, identity and access management, endpoint support, and customer service.
@@ -122,11 +120,6 @@ Supporting Linux infrastructure, HTCondor operations, storage systems, and resea
     ---
     Review technical skills, platforms, and professional competencies developed across rotations.
     [Skills Matrix →](about/skills.md)
-
-- **Timeline**
-    ---
-    A dated view of progression through the rotation program.
-    [Timeline →](about/timeline.md)
 
 - **Career Growth**
     ---
