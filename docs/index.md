@@ -121,9 +121,4 @@ Supporting Linux infrastructure, HTCondor operations, storage systems, and resea
     Review technical skills, platforms, and professional competencies developed across rotations.
     [Skills Matrix →](about/skills.md)
 
-- **Career Growth**
-    ---
-    Goals, development, and what comes next after this rotation.
-    [Career Growth →](about/career-growth.md)
-
 </div>
