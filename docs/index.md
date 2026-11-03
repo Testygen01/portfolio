@@ -2,11 +2,9 @@
 
 ![Justice Chukwuemeka](assets/headshot.jpg){ width="160" }
 
-## Junior Systems Engineer
+## Systems Administrator
 
-Linux infrastructure and research computing, with hands-on experience in support, cloud services, and high throughput computing.
-
-I am participating in the University of Wisconsin-Madison Information Technology Job Rotation Program. Through my rotations so far, I have gained experience supporting end users, enabling cloud services, and administering research computing infrastructure.
+I am a systems administrator in the UW-Madison Information Technology Job Rotation Program, currently on my third rotation at the Center for High Throughput Computing. I have moved from end-user support through cloud engineering to administering the research computing infrastructure that researchers depend on.
 
 <!-- Start here: the only primary entry cards on this page. Keep to three cards. -->
 
