@@ -42,7 +42,7 @@ nav:
   - About:
       - About Me: about/about-me.md
       - Skills Matrix: about/skills.md
-      - Career Growth: about/career-growth.md
+      #- Career Growth: about/career-growth.md
   - Rotations:
       - Help Desk: rotations/help-desk-summary.md
       - Public Cloud: rotations/public-cloud-summary.md
