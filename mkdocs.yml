@@ -42,7 +42,6 @@ nav:
   - About:
       - About Me: about/about-me.md
       - Skills Matrix: about/skills.md
-      - Timeline: about/timeline.md
       - Career Growth: about/career-growth.md
   - Rotations:
       - Help Desk: rotations/help-desk-summary.md
@@ -64,7 +63,7 @@ nav:
           - HTCondor Node Troubleshooting: case-studies/chtc/htcondor-node-troubleshooting.md
           - Data Migration: case-studies/chtc/rsync-data-migration.md
           - RACADM Maintenance: case-studies/chtc/dell-racadm-maintenance.md
-  - Resume: resume/resume.pdf
+  #- Resume: resume/resume.pdf
 
 extra:
     social:
